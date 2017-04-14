@@ -5,6 +5,8 @@
     <title></title>
 	<meta charset="utf-8" />
     <link href="style/main.min.css" rel="stylesheet" />
+    <link href="//at.alicdn.com/t/font_ll6dnq6y3j6bhuxr.css" rel="stylesheet" />
+    
     <!--<script data-main="js/app.js" src="js/require.js"></script>-->
 </head>
 <body>
@@ -35,17 +37,64 @@
             <div class="qr"></div>
             <div class="word3"></div>
             <div class="btn-rule"><img src="img/main/rulebutton.png" /></div>
+            <div class="product1">
+                <img src="img/main/proTS6080.png" class="first" />
+                <img src="img/main/proTS8080.png" /></div>
+            <div class="product2">
+                <img src="img/main/proTS5080.png" /></div>
+            <div class="product3">
+                <img src="img/main/proTS9080P.png" class="first" />
+                <img src="img/main/proMG7780.png" /></div>
+            <div class="store"></div>
+            <div class="store-link">
+                <a href="#"><img src="img/main/linktmall.png" /></a>
+                <a href="#"><img src="img/main/linkjd.png" /></a>
+                <a href="#"><img src="img/main/linksearch.png" /></a>
+            </div>
+            <div class="more"></div>
+            <div class="more-link">
+                <a href="#"><img src="img/main/linkmore1.png" /></a>
+                <a href="#"><img src="img/main/linkmore2.png" /></a>
+                <a href="#"><img src="img/main/linkmore3.png" /></a>
+            </div>
         </div>
 
         
     </div>
 
     <div class="bg1"></div>
-    <div class="player-frame"><img src="img/main/moviephoto.png" /></div>
+    <div class="player-frame"><img src="img/main/moviephoto.jpg" />
+        <img src="img/main/btnplay.png" class="play" /></div>
     <div class="bg2"></div>
+    <div class="bg3"></div>
+    <div class="bg4"></div>
+
+    <div class="copyright">佳能（中国）有限公司版权所有，未经许可不得转载    京ICP备05038060号</div>
 
     
-    
+    <div class="player-box">
+        <div>
+            <object name="8A93F9E061BB808F" id="8A93F9E061BB808F" type="application/x-shockwave-flash" data=""><param name="allowScriptAccess" value="always"><param name="allowFullScreen" value="true"></object>
+            <div class="close"><i class="iconfont icon-close"></i></div>
+            <div class="tips">[广告]购机送花</div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script>
+        var url = 'https://p.bokecc.com/flash/single/2D505A62B40080E8_8B8596B6B5DD24F09C33DC5901307461_false_8A93F9E061BB808F_2/player.swf';
+
+        $('.player-frame').on('click', function () {
+            $('.player-box').fadeIn(function () {
+                $('.player-box object').attr('data', url);
+            });
+        })
+
+        $('.player-box .close').on('click', function () {
+            $('.player-box').fadeOut();
+            $('.player-box object').attr('data', '');
+        })
+    </script>
 
 </body>
 </html>
