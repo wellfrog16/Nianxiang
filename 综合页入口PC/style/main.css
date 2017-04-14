@@ -103,6 +103,9 @@ img {
 .carousel-tips > li > div > div img {
   width: 100%;
 }
+.carousel-tips > li > div > div img.middle {
+  margin: 6px 0;
+}
 .carousel-tips > li .arrow {
   height: 11px;
   margin-top: -11px;

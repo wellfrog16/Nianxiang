@@ -190,6 +190,9 @@ body {
   margin-top: 22px;
   text-align: center;
 }
+.btn-rule a {
+  border: 0;
+}
 .product1 {
   margin-top: 20px;
   text-align: center;
