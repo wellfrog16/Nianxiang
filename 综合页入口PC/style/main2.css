@@ -1,0 +1,144 @@
+﻿/**********************全局样式开始************************/
+html, body {
+    padding: 0;
+    margin: 0;
+    width:100%;
+    height:100%;
+    font:12px/1.5 Arial, Helvetica, SimSun, san-serif;
+}
+
+.box {
+    width: 980px;
+    height:100%;
+    margin: 0 auto;
+
+}
+/**********************全局样式结束************************/
+
+
+
+/**********************头部样式开始************************/
+.header {
+    height:80px;
+    padding:0 40px;
+    /*border:1px solid #f00;*/
+}
+
+.logo {
+    float:left;
+}
+
+.logo img {
+    margin-top:20px;
+    border:0;
+}
+
+.sub-logo {
+    float:right;
+}
+
+.sub-logo img {
+    margin-top:28px;
+}
+/**********************头部样式结束************************/
+
+
+
+/**********************banner样式开始************************/
+.banner {
+    height:400px;
+    overflow:hidden;
+    position:relative;
+}
+
+.carousel-imgs {
+
+}
+
+
+
+.carousel-tips {
+    padding:0;
+    margin:0;
+    position:absolute;
+    background-color:darkblue;
+    width:100%;
+    height:100px;
+    bottom:0;
+    list-style:none;
+}
+
+.carousel-tips > li {
+    float:left;
+    width:245px;
+    height:100px;
+    background:url(https://dummyimage.com/30x30) no-repeat 20px 20px;
+}
+
+.tips01 {
+    background-color:#ff5a5a;
+}
+
+.tips02 {
+    background-color:#5e6dff;
+}
+
+.tips03 {
+    background-color:#aeff5e;
+}
+
+.tips04 {
+    background-color:#ffae5e;
+}
+/**********************banner样式结束************************/
+
+
+
+/**********************banner样式开始************************/
+.nav-banner {
+    margin-top:6px;
+}
+
+.nav-banner div {
+    background-color:cadetblue;
+    
+}
+
+.nav01, .nav02 { 
+    margin-right:6px;
+    float:left;
+    width:320px;
+    height:200px;
+}
+
+.nav03 { 
+    margin-right:6px;
+    float:left;
+    width:160px;
+    height:200px;
+}
+
+.nav04 { 
+    float:right;
+    width:162px;
+    height:97px;
+}
+
+.nav05 { 
+    float:right;
+    width:162px;
+    height:97px;
+    margin-top:6px;
+}
+/**********************banner样式结束************************/
+
+
+
+/**********************尾部样式开始************************/
+.footer {
+    text-align:center;
+    height:80px;
+    line-height:80px;
+    clear:both;
+}
+/**********************尾部样式结束************************/
