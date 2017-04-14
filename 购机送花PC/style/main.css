@@ -1,0 +1,162 @@
+﻿html,
+body,
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Miscrosoft Yahei', '微软雅黑';
+  font-size: 14px;
+  color: #d6d6d6;
+}
+.wrapper {
+  width: 980px;
+  height: 2000px;
+  margin: 0 auto;
+}
+.canon-header {
+  background-color: #fff;
+  height: 56px;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+.canon-header > div {
+  width: 980px;
+  margin: 0 auto;
+}
+.canon-header > div a {
+  float: left;
+  padding-left: 15px;
+  padding-top: 12px;
+}
+.canon-header > div a img {
+  width: 100px;
+  border: 0;
+}
+.canon-header > div > img {
+  float: right;
+  padding-right: 15px;
+  padding-top: 15px;
+  width: 144px;
+}
+.bg {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  background-image: url('../img/main/bg.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.bg1 {
+  background-color: #ffe6e6;
+  height: 680px;
+  width: 100%;
+  background-image: url(../img/main/bg1.png);
+  background-position: center 445px;
+  background-repeat: repeat-x;
+}
+.bg2 {
+  background-color: #ffe6e6;
+  height: 70px;
+  width: 100%;
+  margin-top: 310px;
+  background-image: url(../img/main/bg1.png);
+  background-position: center;
+  background-repeat: repeat-x;
+}
+.KV {
+  width: 100%;
+  height: 690px;
+  margin-top: 56px;
+  background-image: url('../img/main/KV.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.movie {
+  width: 271px;
+  height: 119px;
+  margin: 713px auto 0 auto;
+  background-image: url('../img/main/movie.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.player-frame {
+  width: 1190px;
+  height: 504px;
+  margin: -570px auto 0 auto;
+  position: relative;
+  z-index: 20;
+  background-image: url('../img/main/plaerframe.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+.player-frame img {
+  width: 768px;
+  margin-top: 34px;
+  margin-left: 8px;
+}
+.word1 {
+  width: 368px;
+  height: 162px;
+  margin: 630px auto 0 auto;
+  background-image: url('../img/main/word1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.book {
+  width: 162px;
+  height: 76px;
+  margin: 20px auto 0 auto;
+  background-image: url('../img/main/book.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.word2 {
+  width: 604px;
+  height: 292px;
+  margin: 100px auto 0 auto;
+  background-image: url('../img/main/word2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.qr {
+  width: 170px;
+  height: 170px;
+  margin: 10px auto 0 auto;
+  background-image: url('../img/main/qr.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.word3 {
+  width: 539px;
+  height: 194px;
+  margin: 10px auto 0 auto;
+  background-image: url('../img/main/word3.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.btn-rule {
+  margin-top: 22px;
+  text-align: center;
+}
