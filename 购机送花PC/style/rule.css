@@ -1,0 +1,176 @@
+﻿html,
+body,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+* {
+  box-sizing: border-box;
+}
+img {
+  border: 0;
+}
+.canon-header {
+  background-color: #fff;
+  height: 56px;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+.canon-header > div {
+  width: 980px;
+  margin: 0 auto;
+}
+.canon-header > div a {
+  float: left;
+  padding-left: 15px;
+  padding-top: 12px;
+}
+.canon-header > div a img {
+  width: 100px;
+  border: 0;
+}
+.canon-header > div > img {
+  float: right;
+  padding-right: 15px;
+  padding-top: 15px;
+  width: 144px;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: '黑体', 'Miscrosoft Yahei', '微软雅黑';
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  background-color: #ffe6e6;
+}
+.wrapper {
+  width: 740px;
+  height: auto;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  position: relative;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+h1 {
+  margin-top: 110px;
+  text-align: center;
+  color: #df0011;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+p {
+  font-size: 20px;
+  line-height: 24px;
+}
+.button {
+  width: 78px;
+  height: 25px;
+  background-image: url(../img/rule/button.png);
+  color: #fff;
+  text-align: center;
+  line-height: 25px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-top: 30px;
+  margin-bottom: 17px;
+}
+.title {
+  margin-top: 30px;
+  border-top: 1px solid #000;
+  font-size: 0;
+  height: 0;
+  margin-bottom: 20px;
+}
+.title span {
+  position: relative;
+  top: -11px;
+  font-size: 18px;
+  background-color: #ffe6e6;
+  padding-right: 40px;
+  width: auto;
+}
+.r1 {
+  margin-top: 64px;
+}
+.r2 {
+  margin-top: 52px;
+}
+.r3 {
+  font-size: 16px;
+  margin-top: 34px;
+}
+.r4,
+.r5,
+.r7,
+.r8,
+.r9,
+.r10 {
+  font-size: 16px;
+}
+.r6 {
+  font-size: 17px;
+}
+.r10 {
+  margin-top: 28px;
+}
+.r11 {
+  margin-top: 80px;
+}
+.qr {
+  position: absolute;
+  top: 1070px;
+  right: 0px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+}
+.bg {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  background-image: url('../img/rule/bg.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.bg1 {
+  margin-top: 311px;
+  background-color: #fff;
+  height: 60px;
+}
+.bg2 {
+  margin-top: 954px;
+  background-color: #fff;
+  height: 60px;
+}

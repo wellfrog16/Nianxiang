@@ -5,18 +5,13 @@
     <title>佳能（中国）</title>
 	<meta charset="utf-8" />
     <link href="style/main.min.css" rel="stylesheet" />
-    <link href="//at.alicdn.com/t/font_ll6dnq6y3j6bhuxr.css" rel="stylesheet" />
-    
-    <!--<script data-main="js/app.js" src="js/require.js"></script>-->
+    <link href="//at.alicdn.com/t/font_2j5gpbuwl7wj0pb9.css" rel="stylesheet" />
 </head>
 <body>
     <div class="KV"></div>
 
 
     <div class="bg">
-        
-        
-        
 
         <!-- 主体内容 -->
         <div class="wrapper">
@@ -29,6 +24,8 @@
                 </div>
             </div>
 
+            <div class="gg"></div>
+
             <div class="movie"></div>
 
             <div class="word1"></div>
@@ -36,26 +33,26 @@
             <div class="word2"></div>
             <div class="qr"></div>
             <div class="word3"></div>
-            <div class="btn-rule"><a href="#"><img src="img/main/rulebutton.png" /></a></div>
+            <div class="btn-rule"><a href="rule.html" target="_blank"><img src="img/main/rulebutton.png" /></a></div>
             <div class="product1">
-                <img src="img/main/proTS6080.png" class="first" />
-                <img src="img/main/proTS8080.png" /></div>
+                <a href="http://www.canon.com.cn/products/printer/pixma/ts6080/index.html" target="_blank"><img src="img/main/proTS6080.png" alt="TS6080" class="first" /></a>
+                <a href="http://www.canon.com.cn/products/printer/pixma/ts8080/index.html" target="_blank"><img src="img/main/proTS8080.png" alt="TS8080" /></a></div>
             <div class="product2">
-                <img src="img/main/proTS5080.png" /></div>
+                <a href="http://www.canon.com.cn/products/printer/pixma/ts5080/index.html" target="_blank"><img src="img/main/proTS5080.png" alt="TS5080" /></a></div>
             <div class="product3">
-                <img src="img/main/proTS9080P.png" class="first" />
-                <img src="img/main/proMG7780.png" /></div>
+                <a href="http://www.canon.com.cn/products/printer/pixma/ts9080/index.html" target="_blank"><img src="img/main/proTS9080P.png" alt="TS9080P" class="first" /></a>
+                <a href="http://www.canon.com.cn/products/printer/pixma/mg7780/index.html" target="_blank"><img src="img/main/proMG7780.png" alt="MG7780" /></a></div>
             <div class="store"></div>
             <div class="store-link">
-                <a href="#"><img src="img/main/linktmall.png" /></a>
-                <a href="#"><img src="img/main/linkjd.png" /></a>
-                <a href="#"><img src="img/main/linksearch.png" /></a>
+                <a href="https://canon.tmall.com/view_shop.htm?spm=a220m.1000858.0.0.eeTysL&shop_id=112423652&rn=cb531c82abc797dde25dd023b6716f22" target="_blank"><img src="img/main/linktmall.png" alt="天猫" /></a>
+                <a href="https://sale.jd.com/act/CxtgebdLQNl.html" target="_blank"><img src="img/main/linkjd.png" alt="京东" /></a>
+                <a href="http://www.canon.com.cn/buy/sale/index.html" target="_blank"><img src="img/main/linksearch.png" alt="查询" /></a>
             </div>
             <div class="more"></div>
             <div class="more-link">
-                <a href="#"><img src="img/main/linkmore1.png" /></a>
-                <a href="#"><img src="img/main/linkmore2.png" /></a>
-                <a href="#"><img src="img/main/linkmore3.png" /></a>
+                <a href="http://www.canon.com.cn/sticker/" target="_blank"><img src="img/main/linkmore1.jpg" alt="乐打乐生活" /></a>
+                <a href="http://www.canon.com.cn/products/printer/pixma/special/ts8080/" target="_blank"><img src="img/main/linkmore2.jpg" alt="打印小创意" /></a>
+                <a href="http://www.canon.com.cn/specialsite/photogirls/lesson/printer/pr01.html" target="_blank"><img src="img/main/linkmore3.jpg" alt="印像春日" /></a>
             </div>
         </div>
 
@@ -63,8 +60,8 @@
     </div>
 
     <div class="bg1"></div>
-    <div class="player-frame"><img src="img/main/moviephoto.jpg" />
-        <img src="img/main/btnplay.png" class="play" /></div>
+    <div class="player-frame"><img src="img/main/moviephoto.jpg" alt="购机送花视频" />
+        <img src="img/main/btnplay.png" alt="播放" class="play" /></div>
     <div class="bg2"></div>
     <div class="bg3"></div>
     <div class="bg4"></div>
@@ -75,16 +72,16 @@
     <div class="player-box">
         <div>
             <object name="8A93F9E061BB808F" id="8A93F9E061BB808F" type="application/x-shockwave-flash" data=""><param name="allowScriptAccess" value="always"><param name="allowFullScreen" value="true"></object>
-            <div class="close"><i class="iconfont icon-close"></i></div>
+            <div class="close"><i class="iconfont icon-close1"></i></div>
             <div class="tips">[广告]购机送花</div>
         </div>
     </div>
 
     <script src="js/jquery-3.1.0.min.js"></script>
     <script>
-        var url = 'https://p.bokecc.com/flash/single/2D505A62B40080E8_8B8596B6B5DD24F09C33DC5901307461_false_8A93F9E061BB808F_2/player.swf';
+        var url = 'https://p.bokecc.com/flash/single/2D505A62B40080E8_948E58A5937951929C33DC5901307461_true_8A93F9E061BB808F_1/player.swf';
 
-        $('.player-frame').on('click', function () {
+        $('.player-frame img').on('click', function () {
             $('.player-box').fadeIn(function () {
                 $('.player-box object').attr('data', url);
             });
@@ -98,3 +95,5 @@
 
 </body>
 </html>
+
+

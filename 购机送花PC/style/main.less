@@ -1,4 +1,5 @@
 ﻿@import 'common.less';
+@import 'canon.less';
 
 // ------------------------------------初始化开始-----------------------------------------
 html, body {
@@ -22,45 +23,9 @@ html, body {
     width:@main-width;
     height:auto;
     margin:0 auto;
+    position:relative;
 
 }
-
-// ------------------------------------佳能头部-----------------------------------------
-
-.canon-header {
-    background-color:#fff;
-    height: @logo-height;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    left: 0;
-
-    >div {
-        width:@main-width;
-        //height:56px;
-        margin:0 auto;
-
-        a {
-            float: left;
-            padding-left: 15px;
-            padding-top: 12px;
-            
-            img {
-                width:100px;
-                border:0;
-            }
-        }
-
-        >img {
-            float: right;
-            padding-right: 15px;
-            padding-top: 15px;
-            width:144px;
-        }
-    }
-}
-
 // ------------------------------------背景-----------------------------------------
 
 .bg {
@@ -118,6 +83,17 @@ html, body {
 
 // ------------------------------------内容-----------------------------------------
 
+.gg {
+    width:46px;
+    height:26px;
+    position:absolute;
+    top:-645px;
+    left:980px - 46px - 5px;
+
+    background-image:url(../img/main/gg.jpg);
+    //display:none;
+}
+
 .KV {
     //position:absolute;
     width:100%;
@@ -141,7 +117,7 @@ html, body {
 }
 
 .player-frame {
-    width:1190px;
+    width:100%;
     height:504px;
     //margin:746px auto 0 auto;
     margin:-570px auto 0 auto;
@@ -210,7 +186,7 @@ html, body {
     height:170px;
     margin:10px auto 0 auto;
 
-    background-image:url('../img/main/qr.png');
+    background-image:url('../img/main/qr.jpg');
     background-repeat:no-repeat;
     background-position:center;
 }
@@ -343,6 +319,7 @@ html, body {
         left:40px;
     }
 }
+
 
 // ------------------------------------keyframes-----------------------------------------
 

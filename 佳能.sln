@@ -66,6 +66,27 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "综合页入口Mobile", "�
 		SlnRelativePath = "综合页入口Mobile\"
 	EndProjectSection
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "购机送花Mobile", "购机送花Mobile\", "{91CC3975-257F-4EB4-888E-DDE565C872C3}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_55365"
+		Debug.AspNetCompiler.PhysicalPath = "购机送花Mobile\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55365\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_55365"
+		Release.AspNetCompiler.PhysicalPath = "购机送花Mobile\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55365\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "55365"
+		SlnRelativePath = "购机送花Mobile\"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +98,8 @@ Global
 		{4D1D3C87-719E-4B56-A353-AFD57F1CA457}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12C47811-08DF-4C63-816B-AF6CA79DFE02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{12C47811-08DF-4C63-816B-AF6CA79DFE02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91CC3975-257F-4EB4-888E-DDE565C872C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91CC3975-257F-4EB4-888E-DDE565C872C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
