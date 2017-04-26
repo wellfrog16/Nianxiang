@@ -74,7 +74,7 @@ body {
   height: auto;
   top: 0;
   left: 0;
-  background-image: url('../img/main/bg.png');
+  background-image: url('../img/main/bg3.png');
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -99,7 +99,7 @@ body {
   background-color: #e6e2e1;
   height: 512px;
   width: 100%;
-  margin-top: 897px;
+  margin-top: 995px;
   background-image: url(../img/main/bg1.png);
   background-position: center;
   background-repeat: repeat-x;
@@ -108,7 +108,7 @@ body {
   background-color: #ffe6e6;
   height: 515px;
   width: 100%;
-  margin-top: 440px;
+  margin-top: 450px;
   background-image: url(../img/main/bg1.png);
   background-position: center;
   background-repeat: repeat-x;
@@ -196,6 +196,7 @@ body {
   background-image: url('../img/main/qr.jpg');
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 .word3 {
   width: 539px;
@@ -205,6 +206,13 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+.btn-login {
+  margin-top: 35px;
+  text-align: center;
+}
+.btn-login a {
+  border: 0;
+}
 .btn-rule {
   margin-top: 22px;
   text-align: center;
@@ -213,7 +221,7 @@ body {
   border: 0;
 }
 .product1 {
-  margin-top: 20px;
+  margin-top: 60px;
   text-align: center;
 }
 .product1 img.first {

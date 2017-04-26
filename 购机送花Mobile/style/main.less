@@ -1,4 +1,5 @@
 ﻿@import 'common.less';
+@import 'canon.less';
 
 // ------------------------------------横屏处理-----------------------------------------
 
@@ -21,6 +22,7 @@
         text-align: center;
         line-height: 100vh;
         font-size:20vh;
+        //display: none;
     }
 }
 
@@ -52,42 +54,21 @@ html, body {
 
 }
 
-// ------------------------------------佳能头部-----------------------------------------
-
-.canon-header {
-    background-color:#fff;
-    height: 56px;
-
-    >div {
-        width:100%;
-        //height:56px;
-        margin:0 auto;
-
-        a {
-            float: left;
-            padding-left: 15px;
-            padding-top: 12px;
-            
-            img {
-                width:80px;
-                border:0;
-            }
-        }
-
-        >img {
-            float: right;
-            padding-right: 15px;
-            padding-top: 15px;
-            width:120px;
-        }
-    }
-}
 
 // ------------------------------------wrapper-----------------------------------------
 .wrapper {
     .percent-box();
+}
 
+.mask {
+    .percent-box();
 
+    position:absolute;
+    z-index:999;
+
+    top:0;
+    left:0;
+    display:none;
 }
 
 // ------------------------------------swiper-----------------------------------------
@@ -235,12 +216,28 @@ html, body {
         position:absolute;
         width:228px;
         height:39px;
-        top:850px;
+        top:820px;
         left:205px;
         background-image:url(../img/scene03/rule.jpg);
         background-size:cover;
         background-position:center;
         background-repeat:no-repeat;
+    }
+
+    .s2 {
+        position:absolute;
+        width:186px;
+        height:186px;
+        top:390px;
+        left:230px;
+        background-image:url(../img/scene03/qr.jpg);
+        background-size:cover;
+        background-position:center;
+        background-repeat:no-repeat;
+
+        img {
+            width:100%;
+        }
     }
  }
 
@@ -349,7 +346,7 @@ html, body {
         position:absolute;
         width:274px;
         height:115px;
-        top:690px;
+        top:645px;
         left:40px;
         background-image:url(../img/scene05/link1.jpg);
         background-size:cover;
@@ -360,7 +357,7 @@ html, body {
         position:absolute;
         width:274px;
         height:115px;
-        top:690px;
+        top:645px;
         right:40px;
         background-image:url(../img/scene05/link2.jpg);
         background-size:cover;
@@ -371,7 +368,7 @@ html, body {
         position:absolute;
         width:274px;
         height:115px;
-        top:820px;
+        top:775px;
         left:180px;
         background-image:url(../img/scene05/link3.jpg);
         background-size:cover;

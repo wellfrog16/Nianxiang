@@ -43,7 +43,9 @@ define(['jquery', 'swiper', 'createjs'], function ($, swiper) {
           { "src": "logo/sub_logo.jpg" },
 
           { "src": "main/bg.png" },
+          { "src": "main/gg.jpg" },
           { "src": "main/heart.png" },
+          { "src": "main/qr.jpg" },
 
           { "src": "scene01/bg.jpg" },
           { "src": "scene01/slogan.png" },
@@ -57,6 +59,7 @@ define(['jquery', 'swiper', 'createjs'], function ($, swiper) {
           { "src": "scene02/xiangkuang.png" },
 
           { "src": "scene03/bg.jpg" },
+          { "src": "scene03/qr.jpg" },
           { "src": "scene03/rule.jpg" },
 
           { "src": "scene04/bg.jpg" },
@@ -138,8 +141,10 @@ define(['jquery', 'swiper', 'createjs'], function ($, swiper) {
             video[0].pause();
         });
 
+
+
         // 产品等链接绑定
-        var className = ['ts6080', 'ts8080', 'ts5080', 'ts9080', 'mg7780', 'search', 'tmall', 'jd', 'link1', 'link2', 'link3'];
+        var className = ['ts6080', 'ts8080', 'ts5080', 'ts9080', 'mg7780', 'search', 'tmall', 'jd', 'link1', 'link2', 'link3', 'scene03 .s1', 'canon-link'];
         var url = [
             'http://m.canon.com.cn/m/products/printer/pixma/ts6080/index.html#form=personal-personal_nav.html,call=multifunction-products_printer_pixma_fax-personal_nav,page=1',
             'http://m.canon.com.cn/m/products/printer/pixma/ts8080/index.html#form=personal-personal_nav.html,call=multifunction-products_printer_pixma_fax-personal_nav,page=1',
@@ -147,18 +152,35 @@ define(['jquery', 'swiper', 'createjs'], function ($, swiper) {
             'http://m.canon.com.cn/m/products/printer/pixma/ts9080/index.html#form=personal-personal_nav.html,call=multifunction-products_printer_pixma_fax-personal_nav,page=1',
             'http://m.canon.com.cn/m/products/printer/pixma/mg7780/index.html#form=personal-personal_nav.html,call=multifunction-products_printer_pixma_fax-personal_nav,page=1',
             'http://www.canon.com.cn/buy/sale/index.html',
-            '#',
+            'https://canon.tmall.com/view_shop.htm?spm=a220m.1000858.0.0.eeTysL&shop_id=112423652&rn=cb531c82abc797dde25dd023b6716f22',
             'https://sale.jd.com/m/act/bdfDKpst2RiYn0uh.html',
             'http://m.canon.com.cn/sticker/',
             'http://m.canon.com.cn/products/printer/pixma/special/ts8080/',
             'http://m.canon.com.cn/specialsite/photogirls/lesson/printer/pr01.html',
+            geturl() + 'rule.html',
+            'http://www.canon.com.cn'
         ]
 
         $.each(className, function (index, item) {
             $('.' + item).hammer().on("tap", function (e) {
                 location.href = url[index];
+                //console.log(url[index]);
             });
         })
+
+        function geturl()
+        {
+            var path = window.document.location.href;
+
+            var s = path.split('/');
+            var result = '';
+
+            for (var i = 0; i < s.length - 1; i++) {
+                result += s[i] + '/';
+            }
+
+            return result;
+        }
     }
 
 
@@ -171,6 +193,9 @@ define(['jquery', 'swiper', 'createjs'], function ($, swiper) {
             onInit: function (swiper) {
                 swiperAnimateCache(swiper); //隐藏动画元素        
 
+                $('.heart').hammer().on("tap", function (e) {
+                    swiper.slideNext();
+                });
                 //swiper.slideTo(1);
             },
             onSlideChangeEnd: function (swiper) {
@@ -252,7 +277,7 @@ define(['jquery', 'swiper', 'createjs'], function ($, swiper) {
                         <div class="swiper-slide scene01">\
                             <div class="canon-header">\
                                 <div>\
-                                    <a href="/"><img alt="佳能（中国）" src="img/logo/logo.jpg"></a>\
+                                    <a href="http://www.canon.com.cn"><img alt="佳能（中国）" src="img/logo/logo.jpg" class="canon-link"></a>\
                                     <img alt="感动常在佳能" src="img/logo/sub_logo.jpg">\
                                 </div>\
                             </div>\
@@ -268,6 +293,7 @@ define(['jquery', 'swiper', 'createjs'], function ($, swiper) {
                             <div class="s4 ani jsfix" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"></div>\
                         </div>\
                         <div class="swiper-slide scene03">\
+                            <div class="s2 jsfix"><img src="img/scene03/qr.jpg"></div>\
                             <div class="s1 ani jsfix" swiper-animate-effect="pulse" swiper-animate-duration="1s" swiper-animate-delay="1s"></div>\
                         </div>\
                         <div class="swiper-slide scene04">\
@@ -289,7 +315,8 @@ define(['jquery', 'swiper', 'createjs'], function ($, swiper) {
                         </div>\
                     </div>\
                 </div>\
-                <div class="video"><video x-webkit-airplay="true" webkit-playsinline="true" playsinline="true" x5-video-player-type="h5" x5-video-player-fullscreen="true" preload="auto"></video><div class="close"><i class="iconfont icon-close2"></i></div></div>'
+                <div class="video"><video x-webkit-airplay="true" webkit-playsinline="true" playsinline="true" x5-video-player-type="h5" x5-video-player-fullscreen="true" preload="auto"></video><div class="close"><i class="iconfont icon-close2"></i></div></div>\
+                <div class="mask"></div>'
 
     }
 
