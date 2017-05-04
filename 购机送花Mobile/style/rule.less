@@ -33,7 +33,7 @@ html, body {
     color:#000;
     font-family: 'Miscrosoft Yahei', '微软雅黑';
     font-size:14px;
-    font-weight:bold;
+    //font-weight:bold;
      
     //overflow:hidden;
     background-color:#ffe5e5;    
@@ -69,8 +69,9 @@ p {
 }
 
 .button {
-    width:78px;
+    //width:78px;
     height:25px;
+    padding:0 10px;
     background-color:#df0011;
     border-radius:10px;
     color:#fff;
@@ -79,25 +80,36 @@ p {
     font-weight:bold;
     letter-spacing:3px;
     margin:8px 0;
+    font-size:12px;
+
+    display:inline-block;
 }
 
 .title {
-    margin-top:30px;
-    border-top:1px solid #000;
-    font-size:0;
-    //line-height:0;
-    height:0;
-    margin-bottom:20px;
+    line-height:40px;
+    clear:both;
+    font-size:16px;
 
     span {
-        //display:block;
-        position:relative;
-        top:-11px;
-        font-size:16px;
-        background-color:#ffe6e6;
-        padding-right:12px;
-        width:auto;
+        float:left;
+        font-size:30px;
+        margin-top:-3px;
+        margin-right:5px;
     }
+}
+
+.mobile-t {
+    float:left;
+    margin-top:7px;
+}
+
+.qr {
+    margin-top:10px;
+    clear:both;
+}
+
+.indent {
+    padding-left:23px;
 }
 
 .rule() {
@@ -129,12 +141,12 @@ p {
 
     .link-tmall a {
         display:block;
-        line-height:30px;
+        line-height:25px;
     }
 
     .link-jd a {
         display:block;
-        line-height:30px;
+        line-height:25px;
     }
 
 
@@ -170,7 +182,7 @@ p {
 
     span {
         float:right;
-        text-align:left;
+        text-align:right;
     }
 }
 
