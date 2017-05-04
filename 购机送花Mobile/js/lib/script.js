@@ -1,6 +1,6 @@
 // 剧本
 
-define(['jquery', 'swiper', 'createjs'], function ($, swiper) {
+define(['jquery', 'swiper', 'weixin', 'createjs'], function ($, swiper, wx) {
     var self = {}
 
     self.open = function () {
@@ -45,7 +45,9 @@ define(['jquery', 'swiper', 'createjs'], function ($, swiper) {
           { "src": "main/bg.png" },
           { "src": "main/gg.jpg" },
           { "src": "main/heart.png" },
-          { "src": "main/qr.jpg" },
+          { "src": "main/qr1.jpg" },
+          { "src": "main/qr2.jpg" },
+          { "src": "main/qr3.jpg" },
 
           { "src": "scene01/bg.jpg" },
           { "src": "scene01/slogan.png" },
@@ -85,6 +87,9 @@ define(['jquery', 'swiper', 'createjs'], function ($, swiper) {
 
 
         function onComplete(e) {
+
+            self.share();
+
             // 加载视频地址
             var vid = '948E58A5937951929C33DC5901307461';
             $.get('https://www.canon.com.cn/video/invoking/m/getMobile?vid=' + vid, function (json) {
@@ -151,9 +156,9 @@ define(['jquery', 'swiper', 'createjs'], function ($, swiper) {
             'http://m.canon.com.cn/m/products/printer/pixma/ts5080/index.html#form=personal-personal_nav.html,call=multifunction-products_printer_pixma_fax-personal_nav,page=1',
             'http://m.canon.com.cn/m/products/printer/pixma/ts9080/index.html#form=personal-personal_nav.html,call=multifunction-products_printer_pixma_fax-personal_nav,page=1',
             'http://m.canon.com.cn/m/products/printer/pixma/mg7780/index.html#form=personal-personal_nav.html,call=multifunction-products_printer_pixma_fax-personal_nav,page=1',
-            'http://www.canon.com.cn/buy/sale/index.html',
-            'https://canon.tmall.com/view_shop.htm?spm=a220m.1000858.0.0.eeTysL&shop_id=112423652&rn=cb531c82abc797dde25dd023b6716f22',
-            'https://sale.jd.com/m/act/bdfDKpst2RiYn0uh.html',
+            'http://m.canon.com.cn/m/buy/sale/index.html',
+            'https://content.tmall.com/wow/pegasus/subject/0/1819984936/7542694?spm=0.0.0.0.JtXglD&gccpm=13644688.600.2.subject-1106&id=7542694',
+            'https://sale.jd.com/m/act/kobpVmU8d2a.html',
             'http://m.canon.com.cn/sticker/',
             'http://m.canon.com.cn/products/printer/pixma/special/ts8080/',
             'http://m.canon.com.cn/specialsite/photogirls/lesson/printer/pr01.html',
@@ -318,6 +323,112 @@ define(['jquery', 'swiper', 'createjs'], function ($, swiper) {
                 <div class="video"><video x-webkit-airplay="true" webkit-playsinline="true" playsinline="true" x5-video-player-type="h5" x5-video-player-fullscreen="true" preload="auto"></video><div class="close"><i class="iconfont icon-close2"></i></div></div>\
                 <div class="mask"></div>'
 
+    }
+
+    // 微信分享
+    self.share = function () {
+        var host = "http://m.canon.com.cn/m/products/printer/pixma/pixmaevent";
+        //var host = 'www.tron-m.com/frog/canon/170414-goujisonghua/Mobile32';
+        var project = '';
+
+        $.ajax({
+            type: 'post',
+            url: host + '/share/jssdk',
+            data: { url: window.location.href, m: 'getWxConfig' },
+            //url: 'https://www.tron-m.com/wx/jssdk?m=getWxConfig',
+            //data: { url: window.location.href },
+            dataType: 'json',
+            success: function (args) {
+                args = args.result;
+                //alert(args)
+                wx.config({
+                    debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+                    appId: args.appId, // 必填，公众号的唯一标识
+                    timestamp: args.timestamp, // 必填，生成签名的时间戳
+                    nonceStr: args.nonceStr, // 必填，生成签名的随机串
+                    signature: args.signature,// 必填，签名，见附录1
+                    jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone', 'scanQRCode'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+                });
+
+                wx.ready(function () {
+                    var url = document.location.href,
+                        title = '520，带你花式秀恩爱。',
+                        desc = '距离产生美，谁说异地恋就不幸福！',
+                        imgUrl = host + '/img/main/sharecover.jpg'
+
+                    wx.onMenuShareTimeline({
+                        title: title, // 分享标题
+                        desc: desc, // 分享描述
+                        link: url, // 分享链接
+                        imgUrl: imgUrl, // 分享图标
+                        success: function () {
+                            // 用户确认分享后执行的回调函数
+                        },
+                        cancel: function () {
+                            // 用户取消分享后执行的回调函数
+                        }
+                    });
+
+                    wx.onMenuShareAppMessage({
+                        title: title, // 分享标题
+                        desc: desc, // 分享描述
+                        link: url, // 分享链接
+                        imgUrl: imgUrl, // 分享图标
+                        type: '', // 分享类型,music、video或link，不填默认为link
+                        dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+                        success: function () {
+                            // 用户确认分享后执行的回调函数
+                        },
+                        cancel: function () {
+                            // 用户取消分享后执行的回调函数
+                        }
+                    });
+
+                    wx.onMenuShareQQ({
+                        title: title, // 分享标题
+                        desc: desc, // 分享描述
+                        link: url, // 分享链接
+                        imgUrl: imgUrl, // 分享图标
+                        success: function () {
+                            // 用户确认分享后执行的回调函数
+                        },
+                        cancel: function () {
+                            // 用户取消分享后执行的回调函数
+                        }
+                    });
+
+                    wx.onMenuShareWeibo({
+                        title: title, // 分享标题
+                        desc: desc, // 分享描述
+                        link: url, // 分享链接
+                        imgUrl: imgUrl, // 分享图标
+                        success: function () {
+                            // 用户确认分享后执行的回调函数
+                        },
+                        cancel: function () {
+                            // 用户取消分享后执行的回调函数
+                        }
+                    });
+
+                    wx.onMenuShareQZone({
+                        title: title, // 分享标题
+                        desc: desc, // 分享描述
+                        link: url, // 分享链接
+                        imgUrl: imgUrl, // 分享图标
+                        success: function () {
+                            // 用户确认分享后执行的回调函数
+                        },
+                        cancel: function () {
+                            // 用户取消分享后执行的回调函数
+                        }
+                    });
+                });
+
+                wx.error(function (res) {
+                    console.log("wx has error:" + res);
+                });
+            }
+        });
     }
 
     return self;

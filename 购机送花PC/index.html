@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>佳能（中国）</title>
+    <title>520，带你花式秀恩爱。</title>
 	<meta charset="utf-8" />
     <meta name="keywords" content="打印，是温暖的！">
     <meta name="WT.cg_abc" content="PI;产品;促销">
@@ -50,8 +50,8 @@
                 <a href="http://www.canon.com.cn/products/printer/pixma/mg7780/index.html" target="_blank"><img src="img/main/proMG7780.png" alt="MG7780" /></a></div>
             <div class="store"></div>
             <div class="store-link">
-                <a href="https://canon.tmall.com/view_shop.htm?spm=a220m.1000858.0.0.eeTysL&shop_id=112423652&rn=cb531c82abc797dde25dd023b6716f22" target="_blank"><img src="img/main/linktmall.png" alt="天猫" /></a>
-                <a href="https://sale.jd.com/act/CxtgebdLQNl.html" target="_blank"><img src="img/main/linkjd.png" alt="京东" /></a>
+                <a href="https://content.tmall.com/wow/pegasus/subject/0/1819984936/7542694?spm=0.0.0.0.JtXglD&gccpm=13644688.600.2.subject-1106&id=7542694" target="_blank"><img src="img/main/linktmall.png" alt="天猫" /></a>
+                <a href="https://sale.jd.com/act/kobpVmU8d2a.html" target="_blank"><img src="img/main/linkjd.png" alt="京东" /></a>
                 <a href="http://www.canon.com.cn/buy/sale/index.html" target="_blank"><img src="img/main/linksearch.png" alt="查询" /></a>
             </div>
             <div class="more"></div>
@@ -77,25 +77,35 @@
     
     <div class="player-box">
         <div>
-            <object name="8A93F9E061BB808F" id="8A93F9E061BB808F" type="application/x-shockwave-flash" data=""><param name="allowScriptAccess" value="always"><param name="allowFullScreen" value="true"></object>
+            <div id="object"></div>
             <div class="close"><i class="iconfont icon-close1"></i></div>
-            <div class="tips">[广告]购机送花</div>
+            <div class="tips">打印，是温暖的。</div>
         </div>
     </div>
 
-    <script src="js/jquery-3.1.0.min.js"></script>
+    <!--<script src="js/jquery-3.1.0.min.js"></script>-->
+    <script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
     <script>
         var url = 'https://p.bokecc.com/flash/single/2D505A62B40080E8_948E58A5937951929C33DC5901307461_true_8A93F9E061BB808F_1/player.swf';
 
         $('.player-frame img').on('click', function () {
             $('.player-box').fadeIn(function () {
-                $('.player-box object').attr('data', url);
+                //$('.player-box object').attr('data', url);
+                $('#object').html('\
+                    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="100%" height="100%" id="cc_948E58A5937951929C33DC5901307461">\
+                        <param name="movie" value="https://p.bokecc.com/flash/single/2D505A62B40080E8_948E58A5937951929C33DC5901307461_true_8A93F9E061BB808F_1/player.swf" />\
+                        <param name="allowFullScreen" value="true" />\
+                        <param name="allowScriptAccess" value="always" />\
+                        <param value="transparent" name="wmode" />\
+                        <embed src="https://p.bokecc.com/flash/single/2D505A62B40080E8_948E58A5937951929C33DC5901307461_true_8A93F9E061BB808F_1/player.swf" width="100%" height="100%" name="cc_948E58A5937951929C33DC5901307461" allowFullScreen="true" wmode="transparent" allowScriptAccess="always" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" />\
+                    </object>')
             });
         })
 
         $('.player-box .close').on('click', function () {
             $('.player-box').fadeOut();
-            $('.player-box object').attr('data', '');
+            //$('.player-box object').attr('data', '');
+            $('#object').html('');
         })
     </script>
 

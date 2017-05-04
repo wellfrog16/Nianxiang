@@ -58,52 +58,53 @@ html,
 body {
   width: 100%;
   height: 100%;
-  font-family: '黑体', 'Miscrosoft Yahei', '微软雅黑';
+  font-family: 'Miscrosoft Yahei', '微软雅黑', '黑体';
+  font-family: '微软雅黑';
   font-size: 14px;
-  font-weight: bold;
   color: #000;
   background-color: #ffe6e6;
 }
-.wrapper {
-  width: 740px;
+body {
+  background-image: url('../img/rule/bg.png');
+  background-repeat: no-repeat;
+  background-position: center top;
   height: auto;
-  margin: 0 auto;
-  letter-spacing: 1px;
-  position: relative;
 }
 a {
-  text-decoration: none;
   color: #000;
-}
-.gg {
-  width: 46px;
-  height: 26px;
-  position: absolute;
-  top: -45px;
-  right: -115px;
-  background-image: url(../img/main/gg.jpg);
+  font-weight: initial;
 }
 h1 {
   margin-top: 110px;
+  margin-bottom: 40px;
   text-align: center;
   color: #df0011;
   font-size: 28px;
   letter-spacing: 2px;
 }
 h2 {
-  padding: 0;
-  margin: 0;
+  background-color: #fff;
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
   font-size: 20px;
   font-weight: bold;
 }
+h2 span {
+  width: 740px;
+  margin: 0 auto;
+  display: block;
+}
 p {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 24px;
+  font-weight: initial;
 }
 .button {
-  width: 78px;
   height: 25px;
-  background-image: url(../img/rule/button.png);
+  padding: 0 10px;
+  border-radius: 10px;
+  background-color: #df0011;
   color: #fff;
   text-align: center;
   line-height: 25px;
@@ -111,124 +112,121 @@ p {
   letter-spacing: 3px;
   margin-top: 30px;
   margin-bottom: 17px;
+  display: inline-block;
 }
 .title {
-  margin-top: 30px;
-  border-top: 1px solid #000;
-  font-size: 0;
-  height: 0;
-  margin-bottom: 20px;
+  line-height: 40px;
+  clear: both;
+  font-size: 18px;
 }
 .title span {
-  position: relative;
-  top: -11px;
-  font-size: 18px;
-  background-color: #ffe6e6;
-  padding-right: 40px;
-  width: auto;
+  float: left;
+  font-size: 40px;
+  margin-top: -4px;
+  margin-right: 10px;
 }
-.r1 {
-  margin-top: 64px;
-}
-.r2 {
-  margin-top: 52px;
-}
-.r3 {
-  font-size: 16px;
-  margin-top: 34px;
-}
-.r4,
-.r5,
-.r7,
-.r8,
-.r9,
-.r10 {
-  font-size: 16px;
-}
-.r6 {
-  font-size: 17px;
-}
-.r10 {
-  margin-top: 28px;
+.mobile-t {
+  float: left;
+  margin-top: 7px;
 }
 .qr {
-  position: absolute;
-  top: 1070px;
-  right: 0px;
-  font-size: 14px;
+  margin-top: 10px;
+  clear: both;
+}
+.indent {
+  padding-left: 35px;
+}
+.r1 {
+  width: 740px;
+  margin: 0 auto;
+  margin-top: 64px;
+  margin-bottom: 35px;
+  font-size: 20px;
   text-align: center;
-  line-height: 20px;
+  position: relative;
 }
-.r12 {
-  margin-top: 80px;
+.r1 .gg {
+  width: 46px;
+  height: 26px;
+  position: absolute;
+  top: -45px;
+  right: -115px;
+  background-image: url(../img/main/gg.jpg);
 }
-.r12 h3 {
+.r2 {
+  width: 740px;
+  margin: 0 auto;
+  margin-top: 12px;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+.r2 h2 {
+  margin-bottom: 35px;
+}
+.r2 .link-tmall a {
+  float: left;
+  width: 226px;
+  line-height: 28px;
+  color: #666;
+  font-size: 15px;
+}
+.r2 .link-jd a {
+  float: left;
+  width: 340px;
+  line-height: 28px;
+  color: #666;
+  font-size: 15px;
+}
+.r3 {
+  width: 740px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.r3 h3 {
   font-size: 18px;
   margin: 10px 0;
 }
-.r12 p {
+.r3 p {
   font-size: 16px;
 }
-.r13 {
-  margin-top: 38px;
+.r4 {
+  width: 740px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 25px;
 }
-.r13 h2 {
+.r4 h2 {
   margin-bottom: 35px;
 }
-.r13 p {
+.r4 p {
   font-size: 16px;
 }
-.r14 {
-  margin-top: 38px;
+.r4 .qr {
+  margin-top: 10px;
 }
-.r14 h2 {
+.r5 {
+  width: 740px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.r5 h2 {
   margin-bottom: 35px;
 }
-.r14 p {
+.r5 p {
   font-size: 16px;
 }
-.r15 {
-  margin: 50px 0 150px 0;
+.r6 {
+  width: 740px;
+  margin: 0 auto;
+  margin-top: 50px;
+  height: 50px;
 }
-.r15 span {
+.r6 span {
   float: right;
-  text-align: left;
+  text-align: right;
   font-size: 16px;
-}
-.bg {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  top: 0;
-  left: 0;
-  background-image: url('../img/rule/bg.png');
-  background-repeat: no-repeat;
-  background-position: center top;
-}
-.bg1 {
-  margin-top: 311px;
-  background-color: #fff;
-  height: 60px;
-}
-.bg2 {
-  margin-top: 954px;
-  background-color: #fff;
-  height: 60px;
-}
-.bg3 {
-  margin-top: 784px;
-  background-color: #fff;
-  height: 60px;
-}
-.bg4 {
-  margin-top: 518px;
-  background-color: #fff;
-  height: 60px;
 }
 .copyright {
-  position: absolute;
-  top: 3070px;
-  left: 0;
   width: 100%;
   height: 56px;
   line-height: 56px;

@@ -11,7 +11,8 @@
         'swiper': 'swiper-3.4.1.jquery.min',
         //'swiper': 'swiper.jquery.min',
         'jquery': 'jquery-3.1.0.min',
-        'createjs': 'createjs-2015.11.26.min'
+        'createjs': 'createjs-2015.11.26.min',
+        'weixin': '//res.wx.qq.com/open/js/jweixin-1.0.0'
     },
 
     shim: {
