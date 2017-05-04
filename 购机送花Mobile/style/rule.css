@@ -117,8 +117,8 @@ p {
 }
 .title span {
   float: left;
-  font-size: 30px;
-  margin-top: -3px;
+  font-size: 20px;
+  margin-top: 0px;
   margin-right: 5px;
 }
 .mobile-t {

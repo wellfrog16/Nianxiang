@@ -2,5 +2,9 @@
   {
     "outputFile": "style/rule.css",
     "inputFile": "style/rule.less"
+  },
+  {
+    "outputFile": "style/main.css",
+    "inputFile": "style/main.less"
   }
 ]
