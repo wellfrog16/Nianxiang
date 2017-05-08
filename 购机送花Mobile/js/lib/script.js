@@ -156,11 +156,11 @@ define(['jquery', 'swiper', 'weixin', 'createjs'], function ($, swiper, wx) {
             }
 
             // 视频结束前执行
-            if (video[0].duration > 0 && video[0].currentTime > video[0].duration - 1.5) {
+            //if (video[0].duration > 0 && video[0].currentTime > video[0].duration - 1.5) {
 
-                video[0].pause();
+                //video[0].pause();
                 //$('.video').css('top', '-5000px');
-            }
+            //}
         });
 
 
