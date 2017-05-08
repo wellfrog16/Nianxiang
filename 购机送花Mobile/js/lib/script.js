@@ -123,26 +123,47 @@ define(['jquery', 'swiper', 'weixin', 'createjs'], function ($, swiper, wx) {
         var video = $('.video video');
         $('.scene02 .s2').hammer().on("tap", function (e) {
 
-            $('.video').css('top', '-40px');            
+            //$('.video').css('top', '-40px');            
+            $('.video').show();
+            $('.block').css('z-index', '-1');
 
             // 设置视频地址
             video.attr('src', json.value[0].copy);
             video[0].play();
+            fullScreen();
         });
 
         video.on('timeupdate', function () {
+
+            if (video[0].duration > 0) {
+                fullScreen();
+            }
 
             // 视频结束前执行
             if (video[0].duration > 0 && video[0].currentTime > video[0].duration - 1.5) {
 
                 video[0].pause();
-                $('.video').css('top', '-5000px');
+                //$('.video').css('top', '-5000px');
             }
+        });
+
+
+        video.on('pause', function () {
+
+            $('.video').hide();
+            $('.block').css('z-index', '9999');
+            video[0].pause();
         });
 
         $('.video .close').hammer().on("tap", function (e) {
 
-            $('.video').css('top', '-5000px');
+            fullScreen();
+
+            return;
+
+            //$('.video').css('top', '-5000px');
+            $('.video').hide();
+            $('.block').css('z-index', '9999');
             video[0].pause();
         });
 
@@ -185,6 +206,20 @@ define(['jquery', 'swiper', 'weixin', 'createjs'], function ($, swiper, wx) {
             }
 
             return result;
+        }
+
+        function fullScreen() {
+
+            
+            if (video[0].requestFullscreen) {
+                video[0].requestFullscreen();
+            } else if (video[0].msRequestFullscreen) {
+                video[0].msRequestFullscreen();
+            } else if (video[0].mozRequestFullScreen) {
+                video[0].mozRequestFullScreen();
+            } else if (video[0].webkitSupportsFullscreen) {
+                video[0].webkitEnterFullscreen();
+            }
         }
     }
 
@@ -320,10 +355,13 @@ define(['jquery', 'swiper', 'weixin', 'createjs'], function ($, swiper, wx) {
                         </div>\
                     </div>\
                 </div>\
-                <div class="video"><video x-webkit-airplay="true" webkit-playsinline="true" playsinline="true" x5-video-player-type="h5" x5-video-player-fullscreen="true" preload="auto"></video><div class="close"><i class="iconfont icon-close2"></i></div></div>\
+                <div class="video"><video x-webkit-airplay="allow" webkit-playsinline="" playsinline="true"  controls="controls">您的浏览器不支持html5 video</video></div>\
                 <div class="mask"></div>'
 
     }
+
+    //<div class="video"><video x-webkit-airplay="true" webkit-playsinline="true" playsinline="true" x5-video-player-type="h5" x5-video-player-fullscreen="true" preload="auto"></video><div class="close"><i class="iconfont icon-close2"></i></div></div>\
+    //<video id="cc_D0C04EC4BA6D26F89C33DC5901307461" x-webkit-airplay="allow" webkit-playsinline="" playsinline="true" width="100%" height="280" src="http://cm14-ccm1-2.play.bokecc.com/flvs/ca/Qx8v5/uvQWEIrSHU-10.mp4?t=1494000189&amp;key=DC0F93D2A1C7AA05A978DCEEE1BBD4D2">您的浏览器不支持html5 video</video>
 
     // 微信分享
     self.share = function () {
