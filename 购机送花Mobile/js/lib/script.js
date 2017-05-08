@@ -114,6 +114,22 @@ define(['jquery', 'swiper', 'weixin', 'createjs'], function ($, swiper, wx) {
         }
     }
 
+    // 设备简单判断
+    self.device = (function () {
+        var ua = navigator.userAgent.toLowerCase(), device;
+        if (/android/.test(ua)) {
+            device = 'android';
+        }
+        else if (/safari/.test(ua)) {
+            device = 'safari';
+        }
+        else {
+            device = 'iphone';
+        }
+
+        return device;
+    })();
+
     self.bindAction = function (json) {
         $('.scene01 .s3, .scene02 .s3, .scene03 .s1, .scene04 .s1').on('webkitAnimationEnd', function (e) {
             $('.heart').fadeIn();
@@ -130,13 +146,13 @@ define(['jquery', 'swiper', 'weixin', 'createjs'], function ($, swiper, wx) {
             // 设置视频地址
             video.attr('src', json.value[0].copy);
             video[0].play();
-            fullScreen();
+            if (self.device == 'iphone') { fullScreen(); }
         });
 
         video.on('timeupdate', function () {
 
             if (video[0].duration > 0) {
-                fullScreen();
+                if (self.device == 'iphone') { fullScreen(); }
             }
 
             // 视频结束前执行
