@@ -91,7 +91,8 @@ define(['jquery', 'swiper', 'weixin', 'createjs'], function ($, swiper, wx) {
             self.share();
 
             // 加载视频地址
-            var vid = '948E58A5937951929C33DC5901307461';
+            //var vid = '948E58A5937951929C33DC5901307461';
+            var vid = 'FF9FE5687273850C9C33DC5901307461';
             $.get('https://www.canon.com.cn/video/invoking/m/getMobile?vid=' + vid, function (json) {
 
                 //$('.loading span').text('100%');
@@ -156,11 +157,11 @@ define(['jquery', 'swiper', 'weixin', 'createjs'], function ($, swiper, wx) {
             }
 
             // 视频结束前执行
-            //if (video[0].duration > 0 && video[0].currentTime > video[0].duration - 1.5) {
+            if (video[0].duration > 0 && video[0].currentTime > video[0].duration - 1.5) {
 
-                //video[0].pause();
+                video[0].pause();
                 //$('.video').css('top', '-5000px');
-            //}
+            }
         });
 
 
@@ -194,7 +195,7 @@ define(['jquery', 'swiper', 'weixin', 'createjs'], function ($, swiper, wx) {
             'http://m.canon.com.cn/m/products/printer/pixma/ts9080/index.html#form=personal-personal_nav.html,call=multifunction-products_printer_pixma_fax-personal_nav,page=1',
             'http://m.canon.com.cn/m/products/printer/pixma/mg7780/index.html#form=personal-personal_nav.html,call=multifunction-products_printer_pixma_fax-personal_nav,page=1',
             'http://m.canon.com.cn/m/buy/sale/index.html',
-            'https://content.tmall.com/wow/pegasus/subject/0/1819984936/7542694?spm=0.0.0.0.JtXglD&gccpm=13644688.600.2.subject-1106&id=7542694',
+            'https://content.tmall.com/wow/pegasus/subject/0/1819984936/7542753?spm=0.0.0.0.0jpQ8k&id=7542753&',
             'https://sale.jd.com/m/act/kobpVmU8d2a.html',
             'http://m.canon.com.cn/sticker/',
             'http://m.canon.com.cn/products/printer/pixma/special/ts8080/',
