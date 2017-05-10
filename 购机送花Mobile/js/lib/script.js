@@ -195,7 +195,7 @@ define(['jquery', 'swiper', 'weixin', 'createjs'], function ($, swiper, wx) {
             'http://m.canon.com.cn/m/products/printer/pixma/ts9080/index.html#form=personal-personal_nav.html,call=multifunction-products_printer_pixma_fax-personal_nav,page=1',
             'http://m.canon.com.cn/m/products/printer/pixma/mg7780/index.html#form=personal-personal_nav.html,call=multifunction-products_printer_pixma_fax-personal_nav,page=1',
             'http://m.canon.com.cn/m/buy/sale/index.html',
-            'https://content.tmall.com/wow/pegasus/subject/0/1819984936/7542753?spm=0.0.0.0.0jpQ8k&id=7542753&',
+            'https://content.tmall.com/wow/pegasus/subject/0/2114368939/7581209?spm=0.0.0.0.qGSby3&gccpm=13706367.600.2.subject-1007&id=7581209&f_ua=mobile',
             'https://sale.jd.com/m/act/kobpVmU8d2a.html',
             'http://m.canon.com.cn/sticker/',
             'http://m.canon.com.cn/products/printer/pixma/special/ts8080/',
