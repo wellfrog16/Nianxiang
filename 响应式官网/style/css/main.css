@@ -39,3 +39,25 @@ body {
 .nx-top {
   margin-top: 50px;
 }
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  background-image: url(../img/left.png) !important;
+}
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  background-image: url(../img/right.png) !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  width: 29px !important;
+  height: 58px !important;
+  margin-top: -29px !important;
+  background-size: 29px 58px !important;
+}
+.swiper-pagination-bullet {
+  background: #da291c !important;
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet-active {
+  background: white !important;
+}
