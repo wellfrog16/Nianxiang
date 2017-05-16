@@ -21,6 +21,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "响应式官网", "响应�
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "60332"
+		SlnRelativePath = "响应式官网\"
 	EndProjectSection
 EndProject
 Global
