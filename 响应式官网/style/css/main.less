@@ -4,20 +4,22 @@
 html, body {
     .percent-box();
 
-    font-family: 'Miscrosoft Yahei', '微软雅黑';
+    font-family: HurmeGeometricSans3, DINMd, PingHei, "Lucida Grande", "Lucida Sans Unicode",
+         "Helvetica Neue", Helvetica, "Hiragino Sans GB", arial, sans-serif, '思源黑体', 'Miscrosoft Yahei', '微软雅黑';
     font-size:14px;
 
-    color:#d6d6d6;
+    color:#000;
 }
 
 
 // ------------------------------------导航-----------------------------------------
 
 .navbar-default {
-    background-color:initial;
+    background-color:#fff;
     border:initial;
     
     .navbar-nx-link {
+        margin-right:-15px;
 
         li a {
             color:#da291c;
@@ -25,9 +27,33 @@ html, body {
         }
 
     }
+
+    .navbar-brand {
+        padding:10px 0;
+    }
+}
+
+// ------------------------------------轮播-----------------------------------------
+.swiper-pagination {
+    bottom:56px !important;
+
+    span {
+        margin:0 4.5454% !important;
+    }
 }
 
 // ------------------------------------框架-----------------------------------------
+
+
+
+a {
+    color:#000;
+    text-decoration:none;
+
+    img {
+        border:0;
+    }
+}
 
 .nx-padding {
     padding-left:30px;
@@ -36,6 +62,10 @@ html, body {
 
 .nx-top {
     margin-top:50px;
+}
+
+.swiper-slide img {
+    width:100%;
 }
 
 // ------------------------------------轮播-----------------------------------------
@@ -63,3 +93,311 @@ html, body {
 .swiper-pagination-bullet-active {
     background:white !important;
 }
+
+// ------------------------------------index-----------------------------------------
+
+.nx-index {
+    background-color:#da291c;
+    
+    padding:140px 0 90px 0;
+
+    height:100%;
+
+    img {
+        width:100%;
+    }
+
+    .row {
+        //position:relative;
+        height:100%;
+
+        .bottom {
+            position:absolute;
+            bottom:5px;
+            color:white;
+            //width:100%;
+
+            span {
+                margin-right:20px;
+            }
+        }
+    }
+}
+
+// ------------------------------------about-----------------------------------------
+.kv {
+
+
+    .kv1 {
+        height:432px; background-color:white;
+
+        padding:0 30px;
+        color:#dc3629;
+
+        span {
+            margin-top:57px;
+            font-weight:bolder;
+            font-size:31px;
+            display:block;
+        }
+
+        p {
+            margin-top:54px;
+            font-size:51px;
+            font-weight:200;
+        }
+    }
+
+    .kv2 {
+        background-color:#dc3629;
+        padding:28px 30px 0 30px;
+        height:220px;
+        color:white;
+
+        p { margin:0;}
+
+        .b {
+            font-size:40px;
+            font-weight:bold;
+        }
+
+        a {
+            color:white;
+            text-decoration:underline;
+            font-size:10px;
+        }
+    }
+
+    .logo {
+        height:768px;
+        background-color:#dc3629;
+        text-align:center;
+    }
+}
+
+.nx-about {
+    margin-top:50px;
+}
+
+.nx-title() {
+    color:#dc3629;
+    font-size:36px;
+
+    span {
+        font-weight:bold;
+
+    }
+}
+
+.nx-about-title {
+    .nx-title();
+
+    height:90px;
+    border-bottom:1px solid #dc3629;
+    margin-bottom:28px;
+    margin-top:112px;
+}
+
+.nx-about-title-people {
+    .nx-title();
+
+    height:90px;
+    margin-top:112px;
+}
+
+.nx-about-title-shanghai {
+    .nx-title();
+
+    height:90px;
+    border-bottom:2px solid #dc3629;
+    margin-bottom:28px;
+    margin-top:55px + 34px;
+}
+
+.nx-about-title-client {
+    .nx-title();
+
+    height:90px;
+    border-bottom:1px solid #dc3629;
+    margin-bottom:28px;
+    margin-top:55px;
+}
+
+.nx-about-award {
+    margin-bottom:30px;
+
+    span {
+        font-weight:bold;
+    }
+}
+
+.nx-about-news {
+    margin-bottom:30px;
+
+    h4 {
+        font-weight:bold;
+        font-size:14px;
+    }
+}
+
+.nx-about-people {
+
+    >div {
+        position:relative;
+        overflow:hidden;
+    }
+
+    .hover {
+        position:absolute;
+        .percent-box();
+
+        background-color:rgba(233, 50, 42, 0.9);
+        transition: all 0.3s ease-in-out; 
+        top:100%;
+
+        color:#fff;
+
+        padding:30px;
+
+        span {
+            font-weight:bold;
+            margin-right:20px;
+        }
+
+        p{
+            margin-top:90px;
+        }
+    }
+
+    a:hover>.hover{
+        top: 0;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+// ------------------------------------contact-----------------------------------------
+
+.nx-contact {
+
+    .item {
+        margin-bottom:28px;
+    }
+
+    .title {
+        font-weight:bold;
+    }
+
+    .sns {
+        a {
+            float:left;
+            width:33.33%;
+
+            &.sina {
+                text-align:left;
+            }
+
+            &.weixin {
+                text-align:center;
+            }
+
+            &.be {
+                text-align:right;
+            }
+        }
+    }
+}
+
+// ------------------------------------client-----------------------------------------
+.nx-clients {
+
+    .item {
+        >div {height:24px;}
+    }
+}
+
+// ------------------------------------work-----------------------------------------
+.nx-work {
+
+    margin-top:50px;
+
+    img {
+        width:100%;
+    }
+
+    a{
+        overflow:hidden;
+        display:block;
+        position:relative;
+    }
+
+    .hover {
+        position:absolute;
+        .percent-box();
+
+        background-color:rgba(233, 50, 42, 0.9);
+        transition: all 0.3s ease-in-out; 
+        top:100%;
+
+        color:#fff;
+
+        padding:30px;
+
+        h4{
+            margin:0;
+            font-size:14px;
+        }
+
+        p{
+            font-weight:bold;
+        }
+
+        .footer {
+            position:absolute;
+            bottom:40px;
+        }
+
+    }
+
+    a:hover>.hover{
+        top: 0;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+// ------------------------------------底部-----------------------------------------
+
+ .nx-footer {
+     margin-top:118px;
+     background-color:#da291c;
+     padding-top:32px;
+     color:#fff;
+     height:310px;
+
+     .link {
+         text-align:right;
+         
+         a {
+             color:#fff;
+             text-decoration:none;
+             margin-left:45px;
+         }
+     }
+
+     .line {
+         height:116px;
+         border-bottom:1px solid #fff;
+         margin-bottom:56px;
+     }
+
+     .sns {
+         text-align:right;
+     }
+
+     .copyright {
+         font-size:10px;
+         text-align:center;
+         line-height:40px;
+     }
+ }

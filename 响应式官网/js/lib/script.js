@@ -6,7 +6,7 @@ define(['jquery', 'swiper', 'weixin'], function ($, swiper, wx) {
     self.open = function () {
         var mySwiper = new swiper('.swiper-container', {
             loop: true,
-            autoplay: 2000,
+            autoplay: 6000,
             paginationClickable: true,
             autoplayDisableOnInteraction:false,
 
@@ -17,6 +17,10 @@ define(['jquery', 'swiper', 'weixin'], function ($, swiper, wx) {
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev',
         })
+
+        //$('.nx-about-people>div').on('mouseenter', function () {
+        //    console.log(11);
+        //})
 
     }
 
