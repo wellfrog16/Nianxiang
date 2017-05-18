@@ -1,0 +1,351 @@
+﻿@import 'common.less';
+@import 'canon.less';
+
+// ------------------------------------初始化开始-----------------------------------------
+html, body {
+    .percent-box();
+
+    font-family: 'Miscrosoft Yahei', '微软雅黑';
+    font-size:14px;
+
+    color:#333;
+}
+
+// ------------------------------------全局变量-----------------------------------------
+@main-width:980px;
+@logo-height:56px;
+
+// ------------------------------------框架-----------------------------------------
+
+
+
+.wrapper {
+    width:@main-width;
+    height:auto;
+    margin:0 auto;
+    position:relative;
+
+}
+// ------------------------------------背景-----------------------------------------
+
+.bg {
+    position:absolute;
+    width:100%;
+    height:auto;
+    top:0;
+    left:0;
+
+    background-image:url('../img/main/bg3.png');
+    background-repeat:no-repeat;
+    background-position:center top;
+}
+
+.bg1 {
+    background-color:#ffe6e6;
+    height:680px;
+    width:100%;
+    //margin-top:746px;
+    //margin-bottom:200px;
+    background-image:url(../img/main/bg1.png);
+    background-position:center 445px;
+    background-repeat:repeat-x;
+}
+
+.bg2 {
+    background-color:#ffe6e6;
+    height:70px;
+    width:100%;
+    margin-top:310px;
+    background-image:url(../img/main/bg1.png);
+    background-position:center;
+    background-repeat:repeat-x;
+}
+
+.bg3 {
+    background-color:#e6e2e1;
+    height:512px;
+    width:100%;
+    margin-top:995px;
+    background-image:url(../img/main/bg1.png);
+    background-position:center;
+    background-repeat:repeat-x;
+}
+
+.bg4 {
+    background-color:#ffe6e6;
+    height:515px;
+    width:100%;
+    margin-top:450px;
+    background-image:url(../img/main/bg1.png);
+    background-position:center;
+    background-repeat:repeat-x;
+}
+
+// ------------------------------------内容-----------------------------------------
+
+.gg {
+    width:46px;
+    height:26px;
+    position:absolute;
+    top:-645px;
+    left:980px - 46px - 5px;
+
+    background-image:url(../img/main/gg.jpg);
+    //display:none;
+}
+
+.KV {
+    //position:absolute;
+    width:100%;
+    height:690px;
+    margin-top:@logo-height;
+
+    background-image:url('../img/main/KV.jpg');
+    background-repeat:no-repeat;
+    background-position:center top;
+}
+
+.movie {
+    width:271px;
+    height:119px;
+    //margin:746px auto 0 auto;
+    margin:713px auto 0 auto;
+
+    background-image:url('../img/main/movie.png');
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.player-frame {
+    width:100%;
+    height:504px;
+    //margin:746px auto 0 auto;
+    margin:-570px auto 0 auto;
+    position:relative;
+    z-index:20;
+
+    background-image:url('../img/main/plaerframe.png');
+    background-repeat:no-repeat;
+    background-position:center;
+
+    text-align:center;
+
+    img {
+        width:768px;
+        margin-top:34px;
+        margin-left:8px;
+        cursor:pointer;
+    }
+
+    img.play {
+        width:139px;
+        height:127px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        margin-top:-64px;
+        margin-left:-70px;
+
+        &:hover {
+            animation:kf-btnplay 1500ms ease infinite;
+        }
+    }
+}
+
+.word1 {
+    width:368px;
+    height:162px;
+    margin:630px auto 0 auto;
+
+    background-image:url('../img/main/word1.png');
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.book {
+    width:162px;
+    height:76px;
+    margin:20px auto 0 auto;
+
+    background-image:url('../img/main/book.png');
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.word2 {
+    width:604px;
+    height:292px;
+    margin:100px auto 0 auto;
+
+    background-image:url('../img/main/word2.png');
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.qr {
+    width:170px;
+    height:170px;
+    margin:10px auto 0 auto;
+
+    background-image:url('../img/main/qr.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+
+    cursor:pointer;
+}
+
+.word3 {
+    width:539px;
+    height:194px;
+    margin:10px auto 0 auto;
+
+    background-image:url('../img/main/word3.png');
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.btn-login {
+    margin-top:35px;
+    text-align:center;
+
+    a {
+        border:0;
+    }
+}
+
+.btn-rule {
+    margin-top:22px;
+    text-align:center;
+
+    a {
+        border:0;
+    }
+}
+
+.product1 {
+    margin-top:60px;
+    text-align:center;
+
+    img.first { margin-right:280px;}
+}
+
+.product2 {
+    margin-top:27px;
+    text-align:center;
+}
+
+.product3 {
+    margin-top:27px;
+    text-align:center;
+
+    img.first { margin-right:280px;}
+}
+
+.store {
+    width:271px;
+    height:117px;
+    margin:50px auto 0 auto;
+
+    background-image:url('../img/main/store.png');
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.store-link {
+    margin-top:20px;
+    text-align:center;
+
+    a { margin:0 10px; }
+    img { border:0;}
+}
+
+.more {
+    width:544px;
+    height:120px;
+    margin:90px auto 0 auto;
+
+    background-image:url('../img/main/more.png');
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.more-link {
+    margin-top:20px;
+    text-align:center;
+
+    a { margin:0 10px; }
+    img { border:0;}
+}
+
+.copyright {
+    margin-top:-200px;
+    height:56px;
+    line-height:56px;
+    background-color:#e6e2e2;
+    color:#333;
+    text-align:center;
+}
+
+// ------------------------------------视频播放-----------------------------------------
+.player-box {
+    position:fixed;
+    z-index:200;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0, 0.8);
+    top:0;
+    display:none;
+
+    > div {
+        position:relative;
+        top:50%;
+        left:50%;
+        margin-top:-300px;
+        margin-left:-400px;
+        width:800px;
+        height:600px;
+        padding:40px;
+        background-color:#fff;
+    }
+
+    object, #object {
+        width:100%;
+        height:100%;
+    }
+
+    .close {
+        position:absolute;
+        right:10px;
+        top:10px;
+        animation:kf-close-out 500ms ease;
+        cursor:pointer;
+
+        &:hover {
+            animation:kf-close-in 500ms ease;
+        }
+    }
+
+    .tips {
+        position:absolute;
+        bottom:20px;
+        left:40px;
+    }
+}
+
+
+// ------------------------------------keyframes-----------------------------------------
+
+@keyframes kf-close-in {
+    from { transform:rotate(0deg); }
+    to {transform:rotate(360deg);}
+}
+
+@keyframes kf-close-out {
+    from { transform:rotate(360deg); }
+    to {transform:rotate(0deg);}
+}
+
+@keyframes kf-btnplay {
+    from { transform: scale(1); opacity:1; }
+    to {transform: scale(1.2); opacity:0;}
+}
