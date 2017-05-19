@@ -34,6 +34,34 @@ body {
 .navbar-default .navbar-nx-link li a {
   color: #da291c;
   font-weight: bold;
+  height: 14px;
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  margin-top: 19px;
+  transition: all 0.1s ease-in-out;
+}
+.navbar-default .navbar-nx-link li a:hover {
+  background-position-y: -14px;
+}
+.navbar-default .navbar-nx-link .work {
+  width: 46px;
+  background-image: url(../../img/main/menu-work.png);
+}
+.navbar-default .navbar-nx-link .clients {
+  width: 59px;
+  background-image: url(../../img/main/menu-clients.png);
+  margin-left: 30px;
+}
+.navbar-default .navbar-nx-link .about {
+  width: 60px;
+  background-image: url(../../img/main/menu-about.png);
+  margin-left: 30px;
+}
+.navbar-default .navbar-nx-link .contact {
+  width: 70px;
+  background-image: url(../../img/main/menu-contact.png);
+  margin-left: 20px;
 }
 .navbar-default .navbar-brand {
   padding: 10px 0;
@@ -85,7 +113,7 @@ a img {
 }
 .nx-index {
   background-color: #da291c;
-  padding: 140px 0 90px 0;
+  padding: 170px 0 90px 0;
   height: 100%;
 }
 .nx-index img {
@@ -103,10 +131,11 @@ a img {
   margin-right: 20px;
 }
 .kv .kv1 {
-  height: 432px;
+  height: auto;
   background-color: white;
   padding: 0 30px;
   color: #dc3629;
+  margin-bottom: 80px;
 }
 .kv .kv1 span {
   margin-top: 57px;
@@ -169,7 +198,7 @@ a img {
   color: #dc3629;
   font-size: 36px;
   height: 90px;
-  border-bottom: 2px solid #dc3629;
+  border-bottom: 1px solid #dc3629;
   margin-bottom: 28px;
   margin-top: 89px;
 }
@@ -213,13 +242,14 @@ a img {
   top: 100%;
   color: #fff;
   padding: 30px;
+  overflow: auto;
 }
 .nx-about-people .hover span {
   font-weight: bold;
   margin-right: 20px;
 }
 .nx-about-people .hover p {
-  margin-top: 90px;
+  margin-top: 5%;
 }
 .nx-about-people a:hover > .hover {
   top: 0;
@@ -232,18 +262,27 @@ a img {
 .nx-contact .title {
   font-weight: bold;
 }
-.nx-contact .sns a {
-  float: left;
-  width: 33.33%;
+.nx-contact .map {
+  text-align: right;
 }
-.nx-contact .sns a.sina {
-  text-align: left;
+.nx-contact .sns a {
+  float: right;
+  position: relative;
 }
 .nx-contact .sns a.weixin {
-  text-align: center;
+  margin-left: 10px;
 }
-.nx-contact .sns a.be {
-  text-align: right;
+.nx-contact .sns a.weixin div {
+  position: absolute;
+  display: none;
+  width: 200px;
+  height: 200px;
+  background-image: url(../../img/main/qr.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  top: 35px;
+  right: -10px;
 }
 .nx-clients .item > div {
   height: 24px;
@@ -307,6 +346,20 @@ a img {
 }
 .nx-footer .sns {
   text-align: right;
+}
+.nx-footer .sns a {
+  margin-left: 10px;
+}
+.nx-footer .sns .weixin div {
+  position: absolute;
+  display: none;
+  width: 200px;
+  height: 200px;
+  background-image: url(../../img/main/qr2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -220px;
+  left: -5px;
 }
 .nx-footer .copyright {
   font-size: 10px;

@@ -16,11 +16,17 @@ define(['jquery', 'swiper', 'weixin'], function ($, swiper, wx) {
             // 如果需要前进后退按钮
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev',
+
+            effect:'fade'
         })
 
         //$('.nx-about-people>div').on('mouseenter', function () {
         //    console.log(11);
         //})
+
+        $('.nx-contact .weixin, .nx-footer .weixin').on('click', function () {
+            $('div', $(this)).toggle();
+        })
 
     }
 
