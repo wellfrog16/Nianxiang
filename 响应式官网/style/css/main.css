@@ -20,7 +20,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  font-family: HurmeGeometricSans3, DINMd, PingHei, "Lucida Grande", "Lucida Sans Unicode", "Helvetica Neue", Helvetica, "Hiragino Sans GB", arial, sans-serif, '思源黑体', 'Miscrosoft Yahei', '微软雅黑';
+  font-family: HurmeGeometricSans3, Din, 'Helvetica Neue', Helvetica, Arial, Sans-serif, '思源黑体', 'Hiragino Sans GB', '华文细黑', STXihei, '微软雅黑', 'Microsoft yahei';
   font-size: 14px;
   color: #000;
 }
