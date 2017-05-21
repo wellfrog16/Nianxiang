@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <script data-main="js/app.js" src="js/require.js"></script>
+    <script src="js/lib/jquery-3.1.0.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
 
     <link href="style/css/bootstrap3/bootstrap.min.css" rel="stylesheet" />
     <link href="style/css/main.min.css" rel="stylesheet" />
@@ -21,14 +23,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand hidden-xs" href="index.html"><img src="img/logo.png" /></a>
+                <a class="navbar-brand hidden-sm" href="index.html"><img src="img/logo.png" /></a>
             </div>
             <div class="navbar-collapse collapse" role="navigation">
                 <ul class="nav navbar-nav navbar-right navbar-nx-link">
-                    <li><a href="work.html" class="work"></a></li>
-                    <li><a href="client.html" class="clients"></a></li>
-                    <li><a href="about.html" class="about"></a></li>
-                    <li><a href="contact.html" class="contact"></a></li>
+                    <li><a href="work.html" class="work"><span class="visible-xs">WORK</span></a></li>
+                    <li><a href="client.html" class="clients"><span class="visible-xs">CLIENTS</span></a></li>
+                    <li><a href="about.html" class="about"><span class="visible-xs">ABOUT</span></a></li>
+                    <li><a href="contact.html" class="contact"><span class="visible-xs">CONTACT</span></a></li>
                 </ul>
                 <!--<ul class="nav navbar-nav navbar-right hidden-sm">
                     <li><a href="/about/">关于</a></li>
@@ -36,6 +38,7 @@
             </div>
         </div>
     </div>
+
     <div class="container-fluid nx-top">
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -43,6 +46,8 @@
                 <div class="swiper-slide"><img src="img/about/carousel/2.jpg" class="img-responsive" /></div>
                 <div class="swiper-slide"><img src="img/about/carousel/3.jpg" class="img-responsive" /></div>
                 <div class="swiper-slide"><img src="img/about/carousel/4.jpg" class="img-responsive" /></div>
+                <div class="swiper-slide"><img src="img/about/carousel/5.jpg" class="img-responsive" /></div>
+                <div class="swiper-slide"><img src="img/about/carousel/6.jpg" class="img-responsive" /></div>
             </div>
             <!-- 如果需要分页器 -->
             <div class="swiper-pagination"></div>
@@ -61,24 +66,25 @@
             </p>
         </div>
         <div class="row kv2">
-            <div class="col-sm-3">
-                <p class="a">ESTABLISHED</p>
+            <div class="col-sm-3 col-xs-6">
+                <p class="a">ESTABLISHED 成立</p>
                 <p class="b">2013</p>
                 <a>Find and join us</a>
             </div>
-            <div class="col-sm-3">
-                <p class="a">PROJECTS</p>
-                <p class="b">200+</p>
+            <div class="col-sm-3 col-xs-6">
+                <p class="a">PROJECTS 项目数</p>
+                <p class="b">200 +</p>
                 <a>Explore our work</a>
             </div>
-            <div class="col-sm-3">
-                <p class="a">BRANDS</p>
-                <p class="b">100+</p>
+            <div class="visible-xs col-xs-12"><br /><br /><br /></div>
+            <div class="col-sm-3 col-xs-6">
+                <p class="a">BRANDS 品牌数</p>
+                <p class="b">100 +</p>
                 <a>Search our clients</a>
             </div>
-            <div class="col-sm-3">
-                <p class="a">INCOME</p>
-                <p class="b">200Billion+</p>
+            <div class="col-sm-3 col-xs-6">
+                <p class="a">INCOME 所创产值</p>
+                <p class="b">200亿 +</p>
                 <a>Contact us</a>
             </div>
         </div>
@@ -89,10 +95,10 @@
 
     <div class="container-fluid nx-padding">
         <div class="row nx-about">
-            <div class="col-sm-5">
+            <div class="col-sm-5 col-sm-offset-0 col-xs-12">
                 OIB.CHINA shining original, focusing on fashion consumer goods creative and brand incubation in China, which to lead the industry's fashion consumer brand incubator platform which is became 2017 Stern Bell Venture Capital investment in China's first fashion industry group, for the first time put forward the theory of creative supply chain in the field of Asian fashion consumption, in the face of the global knowledge innovation of the Internet and ecological development which subdividing the information age and personality of the new generation of consumers, creative drive industry chain innovation frontier ideas who really touched the heart of the product to stimulating creative achievements of the brand's desire to innovation, for consumers to bring fashion consumer brand whom the transformation of the move. Original, shining beauty, starting the new age by the beauty.
             </div>
-            <div class="col-sm-6 col-sm-offset-1">
+            <div class="col-sm-6 col-sm-offset-1 col-xs-12">
                 OIB.CHINA耀美原创，聚焦中国时尚消费品创意与品牌孵化，以领先行业的时尚消费品牌孵化平台成为了2017年钟鼎资本投资中国的第一家时尚产业集团。在亚洲时尚消费领域，首次提出创意供应链理论，面对全球知识创新的互联网+生态发展，细分信息时代鲜明与个性的新一代消费者，以创意驱动产业链革新的前沿理念，创造让消费者真正触动内心的产品，激发创意人成就品牌的渴望，以创新，为消费者带去时尚消费品牌为之蜕变的感动。原创，照耀美，以美，创世界。
             </div>
         </div>
@@ -100,7 +106,7 @@
             <!--<div class="col-sm-12"><img src="img/about/capability.png" /></div>-->
             <div class="col-sm-12"><span>CAPABILITY</span></div>
         </div>
-        <div class="row">
+        <div class="row item">
             <div class="col-sm-3">品牌视觉核心分析</div>
             <div class="col-sm-3">标识设计</div>
             <div class="col-sm-3">品牌视觉识别系统VI设计</div>
@@ -133,7 +139,7 @@
             <div class="col-sm-12"><span>AWARDS</span></div>
         </div>
         <div class="row nx-about-award">
-            <div class="col-sm-2">
+            <div class="col-sm-2 col-sm-offset-0">
                 <span>2014 PENTAWARDS</span> - BRONZE
                 <br />LUXURY CATEGORY
                 <br />CMM - MING CREAM
@@ -158,7 +164,7 @@
             <div class="col-sm-12"><span>NEWS</span></div>
         </div>
         <div class="row nx-about-news">
-            <div class="col-sm-5">
+            <div class="col-sm-5 col-sm-offset-0">
                 <h4>2017/05/23~2017/05/25 上海美博会</h4>
                 我们与CBE联合参展。伴随着中国化妆品行业一起成长,如今被美容化妆品业界公认为第一美容展,独具行业领导地位,业界影响力一呼百应。
             </div>
@@ -225,17 +231,17 @@
 
     <div class="container-fluid nx-padding nx-footer">
         <div class="row">
-            <div class="col-sm-1"><a href="http://www.nx-design.net"><img src="img/main/nx-design.png" /></a></div>
-            <div class="col-sm-1 col-sm-offset-1"><img src="img/main/w-insight.png" /></div>
-            <div class="col-sm-6 col-sm-offset-3 link">
+            <div class="col-sm-1 col-sm-offset-0 col-xs-4 col-xs-offset-1"><a href="http://www.nx-design.net" class="nx-design"></a></div>
+            <div class="col-sm-1 col-sm-offset-1 col-xs-4 col-xs-offset-2"><img src="img/main/w-insight.png" /></div>
+            <div class="col-sm-6 col-sm-offset-3 link hidden-xs">
                 <a href="work.html">WORK</a>
                 <a href="client.html">CLIENTS</a>
                 <a href="about.html">ABOUT</a>
                 <a href="contact.html">CONTACT</a>
             </div>
             <div class="col-sm-12 line"></div>
-            <div class="col-sm-10 copyright">Copyright &copy;2015 nx-design.net . All Rights Reserved 沪ICP备14026675号-1</div>
-            <div class="col-sm-2 sns">
+            <div class="col-sm-10 col-xs-12 copyright">Copyright &copy;2015 nx-design.net .<br class="visible-xs" /> All Rights Reserved 沪ICP备14026675号-1</div>
+            <div class="col-sm-2 sns hidden-xs">
                 <a href="javascript:void(0);" class="weixin"><img src="img/icon/weixin-white.png" /><div></div></a>
                 <a href="javascript:void(0);"><img src="img/icon/sina-white.png" /></a>
                 <a href="javascript:void(0);"><img src="img/icon/be-white.png" /></a>

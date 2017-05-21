@@ -6,9 +6,10 @@ define(['jquery', 'swiper', 'weixin'], function ($, swiper, wx) {
     self.open = function () {
         var mySwiper = new swiper('.swiper-container', {
             loop: true,
-            autoplay: 6000,
+            autoplay: 4000,
             paginationClickable: true,
-            autoplayDisableOnInteraction:false,
+            autoplayDisableOnInteraction: false,
+            speed:1500,
 
             // 如果需要分页器
             pagination: '.swiper-pagination',
@@ -24,8 +25,12 @@ define(['jquery', 'swiper', 'weixin'], function ($, swiper, wx) {
         //    console.log(11);
         //})
 
-        $('.nx-contact .weixin, .nx-footer .weixin').on('click', function () {
-            $('div', $(this)).toggle();
+        $('.nx-contact .weixin, .nx-footer .weixin').on('mouseenter', function () {
+            $('div', $(this)).show();
+        })
+
+        $('.nx-contact .weixin, .nx-footer .weixin').on('mouseleave', function () {
+            $('div', $(this)).hide();
         })
 
     }

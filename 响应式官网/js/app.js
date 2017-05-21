@@ -20,7 +20,8 @@
         'jquery': {  // 用依赖来加载插件
             deps: [
                 'jquery-3.1.0.min',
-                'jquery.hammer',
+                'jquery.hammer'
+                //'bootstrap.min',
                 //'jquery.cookie',
 
                 // 临时加载createjs

@@ -20,7 +20,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  font-family: HurmeGeometricSans3, Future, Din, Helvetica Neue, Helvetica, Arial, '思源黑体', Hiragino Sans GB, '华文细黑', STXihei, '微软雅黑', Microsoft yahei, Sans-serif;
+  font-family: HurmeGeometricSans3, Futura, Din, Helvetica Neue, Helvetica, Arial, '思源黑体', Hiragino Sans GB, '华文细黑', STXihei, '微软雅黑', Microsoft yahei, Sans-serif;
   font-size: 14px;
   color: #000;
 }
@@ -66,12 +66,6 @@ body {
 .navbar-default .navbar-brand {
   padding: 10px 0;
 }
-.swiper-pagination {
-  bottom: 56px !important;
-}
-.swiper-pagination span {
-  margin: 0 4.5454% !important;
-}
 a {
   color: #000;
   text-decoration: none;
@@ -88,6 +82,12 @@ a img {
 }
 .swiper-slide img {
   width: 100%;
+}
+.swiper-pagination {
+  bottom: 56px !important;
+}
+.swiper-pagination span {
+  margin: 0 4.5454% !important;
 }
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
@@ -134,7 +134,7 @@ a img {
   height: auto;
   background-color: white;
   padding: 0 30px;
-  color: #dc3629;
+  color: #da291c;
   margin-bottom: 80px;
 }
 .kv .kv1 span {
@@ -149,9 +149,8 @@ a img {
   font-weight: 200;
 }
 .kv .kv2 {
-  background-color: #dc3629;
+  background-color: #da291c;
   padding: 28px 30px 0 30px;
-  height: 220px;
   color: white;
 }
 .kv .kv2 p {
@@ -167,8 +166,8 @@ a img {
   font-size: 10px;
 }
 .kv .logo {
-  height: 768px;
-  background-color: #dc3629;
+  padding: 50px 0;
+  background-color: #da291c;
   text-align: center;
 }
 .nx-about {
@@ -178,7 +177,7 @@ a img {
   color: #dc3629;
   font-size: 36px;
   height: 90px;
-  border-bottom: 1px solid #dc3629;
+  border-bottom: 1px solid #da291c;
   margin-bottom: 28px;
   margin-top: 112px;
 }
@@ -198,7 +197,7 @@ a img {
   color: #dc3629;
   font-size: 36px;
   height: 90px;
-  border-bottom: 1px solid #dc3629;
+  border-bottom: 1px solid #da291c;
   margin-bottom: 28px;
   margin-top: 89px;
 }
@@ -209,7 +208,7 @@ a img {
   color: #dc3629;
   font-size: 36px;
   height: 90px;
-  border-bottom: 1px solid #dc3629;
+  border-bottom: 1px solid #da291c;
   margin-bottom: 28px;
   margin-top: 55px;
 }
@@ -302,7 +301,7 @@ a img {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(233, 50, 42, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
   transition: all 0.3s ease-in-out;
   top: 100%;
   color: #fff;
@@ -331,6 +330,16 @@ a img {
   color: #fff;
   height: 310px;
 }
+.nx-footer .nx-design {
+  width: 116px;
+  height: 58px;
+  background-image: url(../../img/main/nx-design.png);
+  background-position-y: 0;
+  display: block;
+}
+.nx-footer .nx-design:hover {
+  background-position-y: -58px;
+}
 .nx-footer .link {
   text-align: right;
 }
@@ -338,6 +347,10 @@ a img {
   color: #fff;
   text-decoration: none;
   margin-left: 45px;
+  position: relative;
+}
+.nx-footer .link a div {
+  position: absolute;
 }
 .nx-footer .line {
   height: 116px;
@@ -350,6 +363,9 @@ a img {
 .nx-footer .sns a {
   margin-left: 10px;
 }
+.nx-footer .sns .weixin {
+  position: relative;
+}
 .nx-footer .sns .weixin div {
   position: absolute;
   display: none;
@@ -359,10 +375,150 @@ a img {
   background-size: contain;
   background-repeat: no-repeat;
   top: -220px;
-  left: -5px;
+  left: -72px;
 }
 .nx-footer .copyright {
   font-size: 10px;
   text-align: left;
   line-height: 40px;
+}
+@media (max-width: 480px) {
+  .nx-padding {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .nx-about-title {
+    font-size: 16px;
+    height: 30px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+  .nx-about-title-people {
+    font-size: 16px;
+    height: 30px;
+    padding-left: 20px;
+    margin-top: 50px;
+  }
+  .nx-about-title-shanghai {
+    font-size: 16px;
+    height: 30px;
+    padding-left: 20px;
+    border-bottom: 1px solid #da291c;
+    margin-bottom: 28px;
+    margin-top: 89px;
+  }
+  .nx-about-title-client {
+    font-size: 16px;
+    height: 30px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+  .item {
+    padding-left: 20px;
+  }
+  .navbar-default {
+    background-color: #fff;
+    border: initial;
+  }
+  .navbar-default .navbar-nx-link li a {
+    color: #da291c;
+    transition: initial;
+    height: initial;
+    overflow: initial;
+    margin-top: 0;
+    padding: 10px 15px;
+    line-height: 20px;
+    display: block;
+    background-image: initial;
+  }
+  .navbar-default .navbar-nx-link .work,
+  .navbar-default .navbar-nx-link .clients,
+  .navbar-default .navbar-nx-link .about,
+  .navbar-default .navbar-nx-link .contact {
+    width: auto;
+    background-image: initial;
+    margin-left: initial;
+  }
+  .navbar-default .navbar-brand img {
+    margin-left: 10px;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: #da291c;
+  }
+  .navbar-default .navbar-toggle:hover {
+    background-color: #fff;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #da291c;
+  }
+  .swiper-pagination {
+    bottom: 10px !important;
+  }
+  .swiper-pagination span {
+    margin: 0 4.5454% !important;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 14.5px !important;
+    height: 29px !important;
+    margin-top: -14.5px !important;
+    background-size: cover !important;
+  }
+  .swiper-pagination-bullet {
+    background: #da291c !important;
+    opacity: 1 !important;
+  }
+  .swiper-pagination-bullet-active {
+    background: white !important;
+  }
+  .nx-index {
+    padding: 70px 0 0 0;
+  }
+  .kv .kv1 {
+    margin-bottom: 20px;
+  }
+  .kv .kv1 span {
+    margin-top: 20px;
+  }
+  .kv .kv1 p {
+    margin-top: 20px;
+  }
+  .kv .kv2 {
+    height: auto;
+  }
+  .kv .logo {
+    text-align: center;
+  }
+  .kv .logo img {
+    width: 50%;
+  }
+  .nx-about {
+    margin-top: 20px;
+  }
+  .nx-about > div {
+    padding: 15px 20px;
+  }
+  .nx-about-award {
+    padding-left: 20px;
+  }
+  .nx-about-award > div {
+    margin-bottom: 20px;
+  }
+  .nx-about-news > div {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .nx-footer {
+    height: 210px;
+  }
+  .nx-footer .line {
+    height: 90px;
+    margin-bottom: 10px;
+  }
+  .nx-footer .copyright {
+    text-align: center;
+    line-height: 20px;
+  }
 }

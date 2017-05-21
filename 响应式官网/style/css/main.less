@@ -4,12 +4,13 @@
 html, body {
     .percent-box();
 
-    font-family:HurmeGeometricSans3, Future, Din, Helvetica Neue, Helvetica, Arial, '思源黑体',Hiragino Sans GB, '华文细黑',STXihei, '微软雅黑', Microsoft yahei, Sans-serif;
+    font-family:HurmeGeometricSans3, Futura, Din, Helvetica Neue, Helvetica, Arial, '思源黑体', Hiragino Sans GB, '华文细黑', STXihei, '微软雅黑', Microsoft yahei, Sans-serif,;
     font-size:14px;
 
     color:#000;
 }
 
+@web-color:#da291c;
 
 // ------------------------------------导航-----------------------------------------
 
@@ -21,7 +22,7 @@ html, body {
         margin-right:-15px;
 
         li a {
-            color:#da291c;
+            color:@web-color;
             font-weight:bold;
             height:14px;
             display:block;
@@ -65,14 +66,6 @@ html, body {
     }
 }
 
-// ------------------------------------轮播-----------------------------------------
-.swiper-pagination {
-    bottom:56px !important;
-
-    span {
-        margin:0 4.5454% !important;
-    }
-}
 
 // ------------------------------------框架-----------------------------------------
 
@@ -102,6 +95,14 @@ a {
 
 // ------------------------------------轮播-----------------------------------------
 
+.swiper-pagination {
+    bottom:56px !important;
+
+    span {
+        margin:0 4.5454% !important;
+    }
+}
+
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
     background-image:url(../img/left.png) !important;
 }
@@ -118,7 +119,7 @@ a {
  }
 
 .swiper-pagination-bullet {
-    background:#da291c !important;
+    background:@web-color !important;
     opacity:1 !important;
 }
 
@@ -129,7 +130,7 @@ a {
 // ------------------------------------index-----------------------------------------
 
 .nx-index {
-    background-color:#da291c;
+    background-color:@web-color;
     
     padding:170px 0 90px 0;
 
@@ -164,7 +165,7 @@ a {
         height:auto; background-color:white;
 
         padding:0 30px;
-        color:#dc3629;
+        color:@web-color;
         margin-bottom:80px;
 
         span {
@@ -182,9 +183,9 @@ a {
     }
 
     .kv2 {
-        background-color:#dc3629;
+        background-color:@web-color;
         padding:28px 30px 0 30px;
-        height:220px;
+        //height:220px;
         color:white;
 
         p { margin:0;}
@@ -202,8 +203,9 @@ a {
     }
 
     .logo {
-        height:768px;
-        background-color:#dc3629;
+        padding:50px 0;
+        //height:768px;
+        background-color:@web-color;
         text-align:center;
     }
 }
@@ -215,18 +217,19 @@ a {
 .nx-title() {
     color:#dc3629;
     font-size:36px;
+    height:90px;
 
     span {
         font-weight:bold;
 
     }
+
 }
 
 .nx-about-title {
     .nx-title();
 
-    height:90px;
-    border-bottom:1px solid #dc3629;
+    border-bottom:1px solid @web-color;
     margin-bottom:28px;
     margin-top:112px;
 }
@@ -234,15 +237,13 @@ a {
 .nx-about-title-people {
     .nx-title();
 
-    height:90px;
     margin-top:112px;
 }
 
 .nx-about-title-shanghai {
     .nx-title();
 
-    height:90px;
-    border-bottom:1px solid #dc3629;
+    border-bottom:1px solid @web-color;
     margin-bottom:28px;
     margin-top:55px + 34px;
 }
@@ -250,8 +251,7 @@ a {
 .nx-about-title-client {
     .nx-title();
 
-    height:90px;
-    border-bottom:1px solid #dc3629;
+    border-bottom:1px solid @web-color;
     margin-bottom:28px;
     margin-top:55px;
 }
@@ -385,7 +385,7 @@ a {
         position:absolute;
         .percent-box();
 
-        background-color:rgba(233, 50, 42, 0.9);
+        background-color:rgba(0, 0, 0, 0.8);
         transition: all 0.3s ease-in-out; 
         top:100%;
 
@@ -420,10 +420,22 @@ a {
 
  .nx-footer {
      margin-top:118px;
-     background-color:#da291c;
+     background-color:@web-color;
      padding-top:32px;
      color:#fff;
      height:310px;
+
+     .nx-design {
+         width:116px;
+         height:58px;
+         background-image:url(../../img/main/nx-design.png);
+         background-position-y:0;
+         display:block;
+
+         &:hover {
+             background-position-y:-58px;
+         }
+     }
 
      .link {
          text-align:right;
@@ -432,6 +444,12 @@ a {
              color:#fff;
              text-decoration:none;
              margin-left:45px;
+             position:relative;
+
+
+             div {
+                 position:absolute;
+             }
          }
      }
 
@@ -449,6 +467,7 @@ a {
          }
 
          .weixin {
+             position:relative;
 
             div {
                 position:absolute;
@@ -460,7 +479,7 @@ a {
                 background-repeat:no-repeat;
                 //background-position:center;
                 top:-220px;
-                left:-5px;
+                left:-72px;
             }
          }
      }
@@ -471,3 +490,206 @@ a {
          line-height:40px;
      }
  }
+
+
+ @media (max-width: 480px) {
+
+ // ------------------------------------框架-----------------------------------------
+ .nx-padding {
+     padding-left:5px;
+     padding-right:5px;
+ }
+
+ .nx-title() {
+    font-size:16px;
+    height:30px;
+    padding-left:20px;
+}
+
+ .nx-about-title {
+     .nx-title();
+    margin-bottom:15px;
+    margin-top:30px;
+
+}
+
+ .nx-about-title-people {
+    .nx-title();
+
+    margin-top:50px;
+}
+
+.nx-about-title-shanghai {
+    .nx-title();
+
+    border-bottom:1px solid @web-color;
+    margin-bottom:28px;
+    margin-top:55px + 34px;
+}
+
+.nx-about-title-client {
+    .nx-title();
+    margin-bottom:15px;
+    margin-top:30px;
+}
+
+.item {
+    padding-left:20px;
+}
+
+// ------------------------------------导航-----------------------------------------
+.navbar-default {
+    background-color:#fff;
+    border:initial;
+    
+    .navbar-nx-link {
+        //margin-right:-15px;
+
+        li a {
+            color:@web-color;
+            transition:initial;
+            height:initial;
+            overflow:initial;
+            margin-top:0;
+            padding:10px 15px;
+            line-height: 20px;
+            display:block;
+            background-image:initial;
+
+        }
+
+        .work, .clients, .about, .contact {
+            width:auto;
+            background-image:initial;
+            margin-left:initial;
+        }
+
+    }
+
+    .navbar-brand {
+        img {margin-left:10px;}
+    }
+
+    .navbar-toggle {
+        border-color:@web-color;
+
+        &:hover {
+            background-color:#fff;
+        }
+
+        .icon-bar {
+            background-color:@web-color;
+        }
+    }
+}
+
+// ------------------------------------轮播-----------------------------------------
+
+.swiper-pagination {
+    bottom:10px !important;
+
+    span {
+        margin:0 4.5454% !important;
+    }
+}
+
+
+.swiper-button-next, .swiper-button-prev {
+    width:14.5px !important;
+    height:29px !important;
+    margin-top:-14.5px !important;
+    background-size:cover !important;
+ }
+
+.swiper-pagination-bullet {
+    background:@web-color !important;
+    opacity:1 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background:white !important;
+}
+
+
+// ------------------------------------index-----------------------------------------
+
+.nx-index {
+    padding:70px 0 0 0;
+}
+
+
+// ------------------------------------clients-----------------------------------------
+.nx-clients {
+
+
+}
+// ------------------------------------about-----------------------------------------
+.kv {
+    .kv1 {
+        margin-bottom:20px;
+
+        span {
+            margin-top:20px;
+            
+        }
+
+        p{
+            margin-top:20px;
+        }
+    }
+
+    .kv2 {
+        height:auto;
+    }
+
+    .logo {
+        text-align:center;
+
+        img {
+            width:50%;
+        }
+    }
+}
+
+.nx-about {
+    margin-top:20px;
+
+    >div {
+        padding:15px 20px;
+    }
+}
+
+.nx-about-award {
+    padding-left:20px;
+
+    >div {
+        margin-bottom:20px;
+    }
+}
+
+.nx-about-news {
+
+    >div {
+        padding-left:20px;
+        padding-right:20px;
+    }
+}
+// ------------------------------------底部-----------------------------------------
+.nx-footer {
+
+    height:210px;
+
+    .line {
+        height:90px;
+        margin-bottom:10px;
+    }
+
+    .copyright {
+        text-align:center;
+        line-height:20px;
+    }
+}
+
+
+// ------------------------------------end-----------------------------------------
+}
