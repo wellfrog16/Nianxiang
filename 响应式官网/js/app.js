@@ -36,14 +36,14 @@
 require(["jquery", 'script'], function ($, script) {
 
     // 禁止拉动
-    $("body").on("touchmove", function (e) {
-        e.preventDefault();
-    });
+    //$("body").on("touchmove", function (e) {
+    //    e.preventDefault();
+    //});
 
     // 
-    $("body").on("touchstart", function (e) {
-        e.preventDefault();
-    });
+    //$("body").on("touchstart", function (e) {
+    //    e.preventDefault();
+    //});
 
     script.open();
 

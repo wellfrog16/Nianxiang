@@ -27,6 +27,7 @@ body {
 .navbar-default {
   background-color: #fff;
   border: initial;
+  z-index: 50;
 }
 .navbar-default .navbar-nx-link {
   margin-right: -15px;
@@ -65,6 +66,90 @@ body {
 }
 .navbar-default .navbar-brand {
   padding: 10px 0;
+}
+@media screen and (orientation: portrait) {
+  /*竖屏 css*/
+  .block {
+    display: none;
+  }
+}
+@media screen and (orientation: landscape) {
+  /*横屏 css*/
+  .block {
+    z-index: 9999;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 100vh;
+    font-size: 20vh;
+    top: 0;
+    left: 0;
+  }
+}
+.share {
+  font-size: 0;
+  height: 0;
+  overflow: hidden;
+}
+.loading {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  background-color: #da291c;
+  z-index: 99;
+}
+.loading span {
+  margin-top: 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+.loading .logo {
+  width: 50%;
+  max-width: 400px;
+  margin: 20vh auto 0 auto;
+  position: relative;
+}
+.loading .logo img {
+  width: 100%;
+}
+.loading .showImg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #da291c;
+  display: none;
+  cursor: pointer;
+}
+.loading .showImg div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #da291c;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}
+.loading .showImg .showImg1 {
+  background-image: url(../../img/loading/1.png);
+}
+.loading .showImg .showImg2 {
+  background-image: url(../../img/loading/2.png);
+}
+.loading .showImg .showImg3 {
+  background-image: url(../../img/loading/3.png);
+}
+.loading .showImg .showImg4 {
+  background-image: url(../../img/loading/4.png);
 }
 a {
   color: #000;
@@ -348,9 +433,32 @@ a img {
   text-decoration: none;
   margin-left: 45px;
   position: relative;
+  height: 14px;
+  display: inline-block;
+  overflow: hidden;
+  transition: all 0.1s ease-in-out;
 }
-.nx-footer .link a div {
-  position: absolute;
+.nx-footer .link a:hover {
+  background-position-y: -14px;
+}
+.nx-footer .link .work {
+  width: 46px;
+  background-image: url(../../img/main/menu-work-white.png);
+}
+.nx-footer .link .clients {
+  width: 59px;
+  background-image: url(../../img/main/menu-clients-white.png);
+  margin-left: 30px;
+}
+.nx-footer .link .about {
+  width: 60px;
+  background-image: url(../../img/main/menu-about-white.png);
+  margin-left: 30px;
+}
+.nx-footer .link .contact {
+  width: 70px;
+  background-image: url(../../img/main/menu-contact-white.png);
+  margin-left: 20px;
 }
 .nx-footer .line {
   height: 116px;
@@ -380,9 +488,21 @@ a img {
 .nx-footer .copyright {
   font-size: 10px;
   text-align: left;
-  line-height: 40px;
+  line-height: 56px;
 }
 @media (max-width: 480px) {
+  .loading .showImg .showImg1 {
+    background-image: url(../../img/loading/1.jpg);
+  }
+  .loading .showImg .showImg2 {
+    background-image: url(../../img/loading/2.jpg);
+  }
+  .loading .showImg .showImg3 {
+    background-image: url(../../img/loading/3.jpg);
+  }
+  .loading .showImg .showImg4 {
+    background-image: url(../../img/loading/4.jpg);
+  }
   .nx-padding {
     padding-left: 5px;
     padding-right: 5px;
@@ -417,6 +537,7 @@ a img {
   }
   .item {
     padding-left: 20px;
+    padding-right: 20px;
   }
   .navbar-default {
     background-color: #fff;
@@ -514,7 +635,8 @@ a img {
     height: 210px;
   }
   .nx-footer .line {
-    height: 90px;
+    height: 1px;
+    margin-top: 90px;
     margin-bottom: 10px;
   }
   .nx-footer .copyright {
